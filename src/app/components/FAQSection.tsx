@@ -14,7 +14,7 @@ const t = {
     faqs: [
       {
         q: '¿Pymio está conectado al SII real?',
-        a: 'Todavía no. En la demo, los documentos se crean y guardan en tu dispositivo con el formato y el IVA correctos, pero no se transmiten al SII ni tienen validez tributaria. La integración real es parte de la hoja de ruta.',
+        a: 'Todavía no. La demo prepara borradores con el formato y el IVA correspondientes, pero no se transmiten al SII ni tienen validez tributaria.',
       },
       {
         q: '¿El Asistente de Voz entiende el español chileno?',
@@ -22,11 +22,11 @@ const t = {
       },
       {
         q: '¿Mis datos y ventas están seguros?',
-        a: 'En la demo, tus ventas e inventario se guardan solo en tu dispositivo y no se envían a un servidor. Tu clave de Gemini se almacena en el almacenamiento seguro del sistema. Solo se envía a Google el texto de las órdenes de voz.',
+        a: 'La versión actual usa un servicio de desarrollo para ventas e inventario y requiere conexión. No ingreses información real o sensible. Tu clave de Gemini se guarda en el almacenamiento seguro del dispositivo y el texto de las órdenes de voz se envía a Google para interpretarlo.',
       },
       {
         q: '¿Funciona sin internet (offline)?',
-        a: 'Ventas, inventario y documentos funcionan sin conexión porque se guardan localmente. El asistente de voz con IA sí requiere internet. No hay sincronización en la nube todavía.',
+        a: 'La versión actual requiere conexión para ventas, inventario y documentos. La sincronización offline segura todavía no está implementada.',
       },
       {
         q: '¿Cuánto cuesta? ¿En qué plataformas está?',
@@ -40,7 +40,7 @@ const t = {
     faqs: [
       {
         q: 'Is Pymio connected to the real SII?',
-        a: 'Not yet. In the demo, documents are created and stored on your device with the right format and VAT, but they are not transmitted to the SII and have no tax validity. Real integration is on the roadmap.',
+        a: 'Not yet. The demo prepares drafts with the applicable format and VAT, but they are not transmitted to the SII and have no tax validity.',
       },
       {
         q: 'Does the Voice Assistant understand Chilean Spanish?',
@@ -48,11 +48,11 @@ const t = {
       },
       {
         q: 'Is my sales data secure?',
-        a: 'In the demo, your sales and inventory stay on your device and are not sent to a server. Your Gemini key is kept in the system secure storage. Only the text of voice commands is sent to Google.',
+        a: 'The current version uses a development service for sales and inventory and requires an internet connection. Do not enter real or sensitive information. Your Gemini key is kept in secure device storage, and voice-command text is sent to Google for interpretation.',
       },
       {
         q: 'Does it work without internet (offline)?',
-        a: 'Sales, inventory and documents work offline because they are stored locally. The AI voice assistant does need internet. There is no cloud sync yet.',
+        a: 'The current version requires an internet connection for sales, inventory and documents. Secure offline synchronization is not implemented yet.',
       },
       {
         q: 'How much does it cost? Which platforms?',

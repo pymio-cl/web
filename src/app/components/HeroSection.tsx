@@ -14,7 +14,7 @@ const t = {
     badge: 'Demo disponible · Para negocios chilenos',
     headline1: 'Tu negocio,',
     headline2: 'bajo control.',
-    sub: 'Emite documentos tributarios, controla tus ventas e inventario y registra ventas con tu voz — todo en una app Flutter pensada para pymes chilenas.',
+    sub: 'Prepara borradores de documentos tributarios, controla ventas e inventario y registra ventas con tu voz — en una app pensada para pymes chilenas.',
     cta1: 'Probar la demo',
     cta2: 'Ver cómo funciona',
     stats: [
@@ -24,13 +24,13 @@ const t = {
 
     storeApple: 'Próximamente',
     storeGoogle: 'Próximamente',
-    trust: 'Versión de demostración · Los datos quedan en tu dispositivo'
+    trust: 'Versión de demostración · No ingreses datos reales'
   },
   en: {
     badge: 'Demo available · For Chilean businesses',
     headline1: 'Your business,',
     headline2: 'in control.',
-    sub: 'Create tax documents, track sales and inventory, and log sales with your voice — one Flutter app built for Chilean small businesses.',
+    sub: 'Prepare tax-document drafts, track sales and inventory, and log sales with your voice — in one app built for Chilean small businesses.',
     cta1: 'Try the demo',
     cta2: 'See how it works',
     stats: [
@@ -40,7 +40,7 @@ const t = {
 
     storeApple: 'Coming soon',
     storeGoogle: 'Coming soon',
-    trust: 'Demo version · Your data stays on your device'
+    trust: 'Demo version · Do not enter real business data'
   }
 };
 

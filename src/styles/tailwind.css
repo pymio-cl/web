@@ -26,7 +26,8 @@
   --warning: #B97818;
   --destructive: #C74757;
   --radius: 0.875rem;
-  --font-sans: var(--font-plus-jakarta-sans), sans-serif;
+  --font-sans: var(--font-inter), sans-serif;
+  --font-display: var(--font-plus-jakarta-sans), sans-serif;
 }
 
 @layer base {
@@ -43,6 +44,9 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
+  h1, h2, h3, h4, h5, h6, nav, button {
+    font-family: var(--font-display);
+  }
   html {
     scroll-behavior: smooth;
   }
@@ -58,10 +62,12 @@
 
   .soft-button-primary {
     @apply inline-flex items-center justify-center gap-2 rounded-2xl bg-primary text-primary-foreground font-bold shadow-[0_16px_35px_rgba(124,207,232,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#9adff5];
+    font-family: var(--font-display);
   }
 
   .soft-button-secondary {
     @apply inline-flex items-center justify-center gap-2 rounded-2xl bg-white text-foreground font-bold border border-border transition-all duration-300 hover:-translate-y-0.5 hover:border-primary hover:text-primary;
+    font-family: var(--font-display);
   }
 }
 

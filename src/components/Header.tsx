@@ -18,7 +18,7 @@ const t = {
     faq:         'Preguntas',
     about:       'Nosotros',
     contact:     'Contacto',
-    download:    'Descargar Gratis',
+    download:    'Probar la demo',
   },
   en: {
     features:    'Features',
@@ -28,7 +28,7 @@ const t = {
     faq:         'FAQ',
     about:       'About',
     contact:     'Contact',
-    download:    'Download Free',
+    download:    'Try the demo',
   },
 };
 
@@ -116,7 +116,7 @@ export default function Header({ lang, onLangChange }: HeaderProps) {
             </div>
 
             <a
-              href="#download"
+              href="/#download"
               className="flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-bold shadow-[0_12px_25px_rgba(124,207,232,0.35)] hover:bg-[#9adff5] transition-all duration-300"
             >
               <Icon name="ArrowDownTrayIcon" size={16} variant="solid" />
@@ -178,7 +178,7 @@ export default function Header({ lang, onLangChange }: HeaderProps) {
           </div>
 
           <a
-            href="#download"
+            href="/#download"
             onClick={() => setMenuOpen(false)}
             className="flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-4 rounded-2xl text-base font-bold hover:bg-accent transition-colors shadow-lg"
           >

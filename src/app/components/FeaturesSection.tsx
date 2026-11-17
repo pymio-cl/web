@@ -17,9 +17,9 @@ const t = {
         icon:    'DocumentTextIcon' as const,
         color:   'primary',
         tag:     'Documentos tributarios',
-        title:   'Facturación SII',
+        title:   'Boletas y facturas',
         benefit: 'Crea boletas, facturas, notas de débito y notas de crédito con varios productos y IVA calculado.',
-        detail:  'Valida el RUT y calcula el 19% de IVA. En la demo el documento se guarda localmente; el envío real al SII aún no está activo.',
+        detail:  'Valida el RUT y calcula el 19% de IVA. La demo guarda un borrador que no se transmite al SII ni tiene validez tributaria.',
         big:     true,
       },
       {
@@ -60,9 +60,9 @@ const t = {
         icon:    'DocumentTextIcon' as const,
         color:   'primary',
         tag:     'Tax documents',
-        title:   'SII Invoicing',
+        title:   'Receipts and invoices',
         benefit: 'Create receipts, invoices, debit and credit notes with multiple products and VAT calculated.',
-        detail:  'Validates the RUT and calculates 19% VAT. In the demo the document is saved locally; real SII submission is not active yet.',
+        detail:  'Validates the RUT and calculates 19% VAT. The demo saves a draft that is not sent to the SII and has no tax validity.',
         big:     true,
       },
       {
@@ -193,7 +193,7 @@ export default function FeaturesSection({ lang }: FeaturesSectionProps) {
                 <div className="flex items-center gap-2 mb-2">
                   <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
                   <span className="text-xs font-bold text-primary-foreground uppercase tracking-wider">
-                    {lang === 'es' ? 'Conectado al SII' : 'Connected to SII'}
+                    {lang === 'es' ? 'Borrador · sin envío al SII' : 'Draft · not sent to SII'}
                   </span>
                 </div>
                 <div className="flex items-end gap-1">

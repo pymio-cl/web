@@ -34,7 +34,8 @@ module.exports = {
         '4xl': 'calc(var(--radius) * 4)',
       },
       fontFamily: {
-        sans: ['var(--font-plus-jakarta-sans)', 'sans-serif'],
+        sans: ['var(--font-inter)', 'sans-serif'],
+        display: ['var(--font-plus-jakarta-sans)', 'sans-serif'],
       },
       animation: {
         'float-phone':  'floatPhone 5s ease-in-out infinite',

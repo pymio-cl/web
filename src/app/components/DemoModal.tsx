@@ -12,23 +12,22 @@ interface DemoModalProps {
 const t = {
   es: {
     title: 'Tour de Pymio',
-    subtitle: 'Descubre cómo Pymio transforma tu negocio',
+    subtitle: 'Recorrido ilustrativo · Cifras de ejemplo, no son datos reales',
     close: 'Cerrar',
     prev: 'Anterior',
     next: 'Siguiente',
-    finish: 'Empezar Gratis',
+    finish: 'Volver al sitio',
     stepOf: (current: number, total: number) => `Paso ${current} de ${total}`,
     steps: [
       {
         id: 'sii',
-        tag: 'Facturación SII',
+        tag: 'Documentos de prueba',
         title: 'Crea documentos tributarios sin complicaciones',
         description:
-          'Crea boletas y facturas con varios productos. Pymio valida el RUT y calcula el IVA por ti. En la demo el documento se guarda localmente.',
-        highlight: 'IVA 19% automático · RUT validado · Envío al SII próximamente',
-        color: 'from-cyan-500 to-teal-600',
-        iconBg: 'bg-teal-100',
-        iconColor: 'text-teal-700',
+          'Prepara borradores de boletas y facturas. Pymio valida el RUT y calcula el IVA, pero el documento no se transmite al SII ni tiene validez tributaria.',
+        highlight: 'IVA 19% calculado · RUT validado · Sin envío al SII',
+        iconBg: 'bg-secondary',
+        iconColor: 'text-secondary-foreground',
         icon: 'DocumentTextIcon',
         mockup: {
           header: 'Nueva Boleta Electrónica',
@@ -39,20 +38,19 @@ const t = {
             { label: 'IVA (19%)', value: '$2.304' },
           ],
           total: '$16.704',
-          badge: '✓ Guardado (demo)',
-          badgeColor: 'bg-green-100 text-green-700',
+          badge: 'Borrador de ejemplo',
+          badgeColor: 'bg-secondary text-secondary-foreground',
         },
       },
       {
         id: 'sales',
         tag: 'Control de Ventas',
-        title: 'Controla tus ventas en tiempo real',
+        title: 'Revisa un resumen de ventas',
         description:
-          'Ve cuánto vendiste hoy, esta semana y este mes. Identifica tus productos más vendidos y toma decisiones con datos reales de tu negocio.',
-        highlight: 'Gráficos claros · Alertas de stock · Exporta a Excel',
-        color: 'from-blue-500 to-cyan-600',
-        iconBg: 'bg-blue-100',
-        iconColor: 'text-blue-700',
+          'Explora un resumen de ventas y alertas de stock. Las cifras de esta vista son ilustrativas y no corresponden a datos de tu negocio.',
+        highlight: 'Resumen visual · Stock de ejemplo',
+        iconBg: 'bg-primary/15',
+        iconColor: 'text-primary-foreground',
         icon: 'ChartBarIcon',
         mockup: {
           header: 'Resumen de Ventas',
@@ -64,9 +62,9 @@ const t = {
             { day: 'Vie', pct: 100, val: '$149k' },
             { day: 'Sáb', pct: 90, val: '$135k' },
           ],
-          total: '$665.000',
-          badge: '↑ +18% esta semana',
-          badgeColor: 'bg-blue-100 text-blue-700',
+          total: 'Ejemplo',
+          badge: 'Cifras ilustrativas',
+          badgeColor: 'bg-secondary text-secondary-foreground',
         },
       },
       {
@@ -74,46 +72,44 @@ const t = {
         tag: 'Asistente de Voz',
         title: 'Registra ventas con tu voz',
         description:
-          'Habla naturalmente y Pymio registra la venta por ti. Perfecto para cuando tienes las manos ocupadas atendiendo clientes en tu feria o tienda.',
-        highlight: 'Español chileno · Sin escribir · Funciona offline',
-        color: 'from-violet-500 to-purple-600',
-        iconBg: 'bg-violet-100',
-        iconColor: 'text-violet-700',
+          'Voz Pymio interpreta el comando y prepara un borrador de venta. Requiere internet y tu propia clave de Gemini; tú confirmas antes de guardar.',
+        highlight: 'Español chileno · Requiere internet · Borrador por confirmar',
+        iconBg: 'bg-accent/20',
+        iconColor: 'text-accent-foreground',
         icon: 'MicrophoneIcon',
         mockup: {
           header: 'Asistente de Voz Pymio',
           conversation: [
             { who: 'user', text: '"Vendí tres panes de molde a mil quinientos"' },
-            { who: 'bot', text: '✓ Registrado: 3× Pan de Molde — $4.500' },
+            { who: 'bot', text: 'Borrador: 3× Pan de Molde — $4.500' },
             { who: 'user', text: '"Y dos jugos naturales a dos mil"' },
-            { who: 'bot', text: '✓ Registrado: 2× Jugo Natural — $4.000' },
+            { who: 'bot', text: 'Borrador: 2× Jugo Natural — $4.000' },
           ],
-          total: 'Total sesión: $8.500',
-          badge: '🎙 Escuchando...',
-          badgeColor: 'bg-violet-100 text-violet-700',
+          total: 'Total de borradores de ejemplo: $8.500',
+          badge: 'Ejemplo',
+          badgeColor: 'bg-accent/20 text-accent-foreground',
         },
       },
     ],
   },
   en: {
     title: 'Pymio Tour',
-    subtitle: 'Discover how Pymio transforms your business',
+    subtitle: 'Illustrative tour · Sample figures, not real business data',
     close: 'Close',
     prev: 'Previous',
     next: 'Next',
-    finish: 'Start for Free',
+    finish: 'Back to the site',
     stepOf: (current: number, total: number) => `Step ${current} of ${total}`,
     steps: [
       {
         id: 'sii',
-        tag: 'SII Invoicing',
+        tag: 'Sample documents',
         title: 'Create tax documents with no hassle',
         description:
-          'Create receipts and invoices with multiple products. Pymio validates the RUT and calculates VAT for you. In the demo the document is saved locally.',
-        highlight: 'Automatic 19% VAT · RUT validated · SII submission coming soon',
-        color: 'from-cyan-500 to-teal-600',
-        iconBg: 'bg-teal-100',
-        iconColor: 'text-teal-700',
+          'Prepare receipt and invoice drafts. Pymio validates the RUT and calculates VAT, but documents are not sent to the SII and have no tax validity.',
+        highlight: '19% VAT calculated · RUT validated · Not sent to SII',
+        iconBg: 'bg-secondary',
+        iconColor: 'text-secondary-foreground',
         icon: 'DocumentTextIcon',
         mockup: {
           header: 'New Electronic Invoice',
@@ -124,20 +120,19 @@ const t = {
             { label: 'VAT (19%)', value: '$2,304' },
           ],
           total: '$16,704',
-          badge: '✓ Saved (demo)',
-          badgeColor: 'bg-green-100 text-green-700',
+          badge: 'Sample draft',
+          badgeColor: 'bg-secondary text-secondary-foreground',
         },
       },
       {
         id: 'sales',
         tag: 'Sales Tracking',
-        title: 'Track your sales in real time',
+        title: 'Review a sales summary',
         description:
-          'See how much you sold today, this week, and this month. Identify your best-selling products and make decisions with real data.',
-        highlight: 'Clear charts · Stock alerts · Export to Excel',
-        color: 'from-blue-500 to-cyan-600',
-        iconBg: 'bg-blue-100',
-        iconColor: 'text-blue-700',
+          'Explore a sales summary and stock alerts. The figures in this view are illustrative and do not represent your business data.',
+        highlight: 'Visual summary · Sample stock',
+        iconBg: 'bg-primary/15',
+        iconColor: 'text-primary-foreground',
         icon: 'ChartBarIcon',
         mockup: {
           header: 'Sales Summary',
@@ -149,9 +144,9 @@ const t = {
             { day: 'Fri', pct: 100, val: '$149k' },
             { day: 'Sat', pct: 90, val: '$135k' },
           ],
-          total: '$665,000',
-          badge: '↑ +18% this week',
-          badgeColor: 'bg-blue-100 text-blue-700',
+          total: 'Sample',
+          badge: 'Illustrative figures',
+          badgeColor: 'bg-secondary text-secondary-foreground',
         },
       },
       {
@@ -159,23 +154,22 @@ const t = {
         tag: 'Voice Assistant',
         title: 'Record sales with your voice',
         description:
-          'Speak naturally and Pymio logs the sale for you. Perfect for when your hands are busy serving customers at your market stall or store.',
-        highlight: 'Chilean Spanish · No typing · Works offline',
-        color: 'from-violet-500 to-purple-600',
-        iconBg: 'bg-violet-100',
-        iconColor: 'text-violet-700',
+          'Voz Pymio interprets a command and prepares a sales draft. It requires internet and your own Gemini key; you confirm before saving.',
+        highlight: 'Chilean Spanish · Internet required · Draft needs confirmation',
+        iconBg: 'bg-accent/20',
+        iconColor: 'text-accent-foreground',
         icon: 'MicrophoneIcon',
         mockup: {
           header: 'Pymio Voice Assistant',
           conversation: [
             { who: 'user', text: '"Sold three loaves of bread at fifteen hundred"' },
-            { who: 'bot', text: '✓ Logged: 3× Bread Loaf — $4,500' },
+            { who: 'bot', text: 'Draft: 3× Bread Loaf — $4,500' },
             { who: 'user', text: '"And two fresh juices at two thousand"' },
-            { who: 'bot', text: '✓ Logged: 2× Fresh Juice — $4,000' },
+            { who: 'bot', text: 'Draft: 2× Fresh Juice — $4,000' },
           ],
-          total: 'Session total: $8,500',
-          badge: '🎙 Listening...',
-          badgeColor: 'bg-violet-100 text-violet-700',
+          total: 'Sample drafts total: $8,500',
+          badge: 'Sample',
+          badgeColor: 'bg-accent/20 text-accent-foreground',
         },
       },
     ],
@@ -193,20 +187,20 @@ function SIIMockup({ step }: { step: Step }) {
     badgeColor: string;
   };
   return (
-    <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden w-full max-w-xs mx-auto">
-      <div className={`bg-gradient-to-r ${step.color} px-4 py-3`}>
+    <div className="bg-card rounded-2xl shadow-lg border border-border overflow-hidden w-full max-w-xs mx-auto">
+      <div className="bg-foreground px-4 py-3">
         <p className="text-white font-bold text-sm">{mockup.header}</p>
       </div>
       <div className="p-4 space-y-2.5">
         {mockup.lines.map((line, i) => (
           <div key={i} className="flex justify-between items-center text-sm">
-            <span className="text-gray-500">{line.label}</span>
-            <span className="font-semibold text-gray-800">{line.value}</span>
+            <span className="text-muted-foreground">{line.label}</span>
+            <span className="font-semibold text-foreground">{line.value}</span>
           </div>
         ))}
-        <div className="border-t border-dashed border-gray-200 pt-2.5 flex justify-between items-center">
-          <span className="font-bold text-gray-800 text-sm">Total</span>
-          <span className="font-extrabold text-gray-900 text-base">{mockup.total}</span>
+        <div className="border-t border-dashed border-border pt-2.5 flex justify-between items-center">
+          <span className="font-bold text-foreground text-sm">Total</span>
+          <span className="font-extrabold text-foreground text-base">{mockup.total}</span>
         </div>
         <div className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold ${mockup.badgeColor}`}>
           {mockup.badge}
@@ -225,21 +219,21 @@ function SalesMockup({ step }: { step: Step }) {
     badgeColor: string;
   };
   return (
-    <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden w-full max-w-xs mx-auto">
-      <div className={`bg-gradient-to-r ${step.color} px-4 py-3 flex justify-between items-center`}>
+    <div className="bg-card rounded-2xl shadow-lg border border-border overflow-hidden w-full max-w-xs mx-auto">
+      <div className="bg-foreground px-4 py-3 flex justify-between items-center">
         <p className="text-white font-bold text-sm">{mockup.header}</p>
-        <span className={`text-xs font-bold px-2 py-0.5 rounded-full bg-white/20 text-white`}>{mockup.total}</span>
+        <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-white/15 text-white">{mockup.total}</span>
       </div>
       <div className="p-4">
         <div className="flex items-end gap-1.5 h-24 mb-3">
           {mockup.chart.map((bar, i) => (
             <div key={i} className="flex-1 flex flex-col items-center gap-1">
-              <span className="text-[9px] text-gray-400 font-medium">{bar.val}</span>
+              <span className="text-[9px] text-muted-foreground font-medium">{bar.val}</span>
               <div
-                className={`w-full rounded-t-md bg-gradient-to-t ${step.color} opacity-80 transition-all duration-500`}
+                className="w-full rounded-t-md bg-brand-turquoise/80 transition-all duration-500"
                 style={{ height: `${bar.pct}%` }}
               />
-              <span className="text-[9px] text-gray-500 font-semibold">{bar.day}</span>
+              <span className="text-[9px] text-muted-foreground font-semibold">{bar.day}</span>
             </div>
           ))}
         </div>
@@ -252,7 +246,6 @@ function SalesMockup({ step }: { step: Step }) {
 }
 
 function VoiceMockup({ step }: { step: Step }) {
-  const [pulse, setPulse] = useState(false);
   const mockup = step.mockup as {
     header: string;
     conversation: { who: string; text: string }[];
@@ -261,15 +254,10 @@ function VoiceMockup({ step }: { step: Step }) {
     badgeColor: string;
   };
 
-  useEffect(() => {
-    const interval = setInterval(() => setPulse((p) => !p), 900);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
-    <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden w-full max-w-xs mx-auto">
-      <div className={`bg-gradient-to-r ${step.color} px-4 py-3 flex items-center gap-2`}>
-        <div className={`w-2.5 h-2.5 rounded-full bg-white transition-opacity duration-300 ${pulse ? 'opacity-100' : 'opacity-40'}`} />
+    <div className="bg-card rounded-2xl shadow-lg border border-border overflow-hidden w-full max-w-xs mx-auto">
+      <div className="bg-foreground px-4 py-3 flex items-center gap-2">
+        <div className="w-2.5 h-2.5 rounded-full bg-brand-turquoise" />
         <p className="text-white font-bold text-sm">{mockup.header}</p>
       </div>
       <div className="p-4 space-y-2.5">
@@ -280,14 +268,14 @@ function VoiceMockup({ step }: { step: Step }) {
           >
             <div
               className={`max-w-[85%] px-3 py-2 rounded-2xl text-xs font-medium leading-snug ${
-                msg.who === 'user' ?'bg-violet-100 text-violet-800 rounded-br-sm' :'bg-gray-100 text-gray-700 rounded-bl-sm'
+                msg.who === 'user' ?'bg-secondary text-secondary-foreground rounded-br-sm' :'bg-muted text-foreground rounded-bl-sm'
               }`}
             >
               {msg.text}
             </div>
           </div>
         ))}
-        <div className="border-t border-dashed border-gray-200 pt-2 text-xs font-bold text-gray-700">
+        <div className="border-t border-dashed border-border pt-2 text-xs font-bold text-foreground">
           {mockup.total}
         </div>
       </div>
@@ -367,20 +355,20 @@ export default function DemoModal({ isOpen, onClose, lang }: DemoModalProps) {
       />
 
       {/* Modal panel */}
-      <div className="relative z-10 w-full max-w-2xl bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+      <div className="relative z-10 w-full max-w-2xl bg-card rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
 
         {/* Header */}
-        <div className="flex items-center justify-between px-6 pt-5 pb-4 border-b border-gray-100">
+        <div className="flex items-center justify-between px-6 pt-5 pb-4 border-b border-border">
           <div>
-            <h2 className="text-lg font-extrabold text-gray-900 tracking-tight">{tx.title}</h2>
-            <p className="text-xs text-gray-500 mt-0.5">{tx.subtitle}</p>
+            <h2 className="text-lg font-extrabold text-foreground tracking-tight">{tx.title}</h2>
+            <p className="text-xs text-muted-foreground mt-0.5">{tx.subtitle}</p>
           </div>
           <button
             onClick={onClose}
-            className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
+            className="w-9 h-9 flex items-center justify-center rounded-full bg-muted hover:bg-secondary transition-colors"
             aria-label={tx.close}
           >
-            <Icon name="XMarkIcon" size={18} className="text-gray-600" />
+            <Icon name="XMarkIcon" size={18} className="text-foreground" />
           </button>
         </div>
 
@@ -392,18 +380,18 @@ export default function DemoModal({ isOpen, onClose, lang }: DemoModalProps) {
               onClick={() => goTo(i, i > currentStep ? 'right' : 'left')}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all duration-200 ${
                 i === currentStep
-                  ? `bg-gradient-to-r ${step.color} text-white shadow-sm`
+                  ? 'bg-foreground text-white shadow-sm'
                   : i < currentStep
-                  ? 'bg-gray-100 text-gray-500' :'bg-gray-50 text-gray-400 border border-gray-200'
+                  ? 'bg-secondary text-secondary-foreground' :'bg-muted text-muted-foreground border border-border'
               }`}
             >
               {i < currentStep && (
-                <Icon name="CheckIcon" size={12} className="text-gray-500" />
+                <Icon name="CheckIcon" size={12} className="text-secondary-foreground" />
               )}
               {s.tag}
             </button>
           ))}
-          <span className="ml-auto text-xs text-gray-400 font-medium">
+          <span className="ml-auto text-xs text-muted-foreground font-medium">
             {tx.stepOf(currentStep + 1, totalSteps)}
           </span>
         </div>
@@ -420,10 +408,10 @@ export default function DemoModal({ isOpen, onClose, lang }: DemoModalProps) {
                 <Icon name={step.icon as Parameters<typeof Icon>[0]['name']} size={14} />
                 {step.tag}
               </div>
-              <h3 className="text-xl font-extrabold text-gray-900 leading-snug">
+              <h3 className="text-xl font-extrabold text-foreground leading-snug">
                 {step.title}
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 {step.description}
               </p>
               <div className={`flex flex-wrap gap-1.5`}>
@@ -446,19 +434,19 @@ export default function DemoModal({ isOpen, onClose, lang }: DemoModalProps) {
         </div>
 
         {/* Progress bar */}
-        <div className="h-1 bg-gray-100">
+        <div className="h-1 bg-muted">
           <div
-            className={`h-full bg-gradient-to-r ${step.color} transition-all duration-400`}
+            className="h-full bg-brand-turquoise transition-all duration-400"
             style={{ width: `${((currentStep + 1) / totalSteps) * 100}%` }}
           />
         </div>
 
         {/* Footer navigation */}
-        <div className="flex items-center justify-between px-6 py-4 border-t border-gray-100 bg-gray-50/60">
+        <div className="flex items-center justify-between px-6 py-4 border-t border-border bg-muted/50">
           <button
             onClick={handlePrev}
             disabled={currentStep === 0}
-            className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-gray-600 hover:bg-gray-200 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+            className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-muted-foreground hover:bg-secondary disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
           >
             <Icon name="ChevronLeftIcon" size={16} />
             {tx.prev}
@@ -466,9 +454,9 @@ export default function DemoModal({ isOpen, onClose, lang }: DemoModalProps) {
 
           {isLast ? (
             <a
-              href="#download"
+              href="/#hero"
               onClick={onClose}
-              className={`flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r ${step.color} hover:opacity-90 transition-opacity shadow-md`}
+              className="flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold bg-primary text-primary-foreground hover:bg-secondary transition-colors shadow-md"
             >
               <Icon name="ArrowDownTrayIcon" size={16} />
               {tx.finish}
@@ -476,7 +464,7 @@ export default function DemoModal({ isOpen, onClose, lang }: DemoModalProps) {
           ) : (
             <button
               onClick={handleNext}
-              className={`flex items-center gap-1.5 px-5 py-2.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r ${step.color} hover:opacity-90 transition-opacity shadow-md`}
+              className="flex items-center gap-1.5 px-5 py-2.5 rounded-xl text-sm font-bold bg-primary text-primary-foreground hover:bg-secondary transition-colors shadow-md"
             >
               {tx.next}
               <Icon name="ChevronRightIcon" size={16} />

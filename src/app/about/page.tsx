@@ -429,7 +429,7 @@ export default function AboutPage() {
             <p className="text-muted-foreground text-base mb-10">{tx.ctaBody}</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="#download"
+                href="/#download"
                 className="flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full font-bold text-base hover:bg-accent transition-colors duration-300 shadow-lg hover:shadow-xl"
               >
                 <Icon name="ArrowDownTrayIcon" size={18} variant="solid" />
