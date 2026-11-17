@@ -109,24 +109,17 @@ export default function HeroSection({ lang }: HeroSectionProps) {
           style={{ animation: 'fadeSlideIn 0.8s ease-out 0.1s both' }}>
           
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/80 text-primary px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider mb-6 self-start border border-primary/15 shadow-[0_10px_25px_rgba(124,207,232,0.18)]">
-            <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-white/80 text-foreground px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider mb-6 self-start border border-primary/15 shadow-[0_10px_25px_rgba(124,207,232,0.18)]">
+            <span className="w-2 h-2 rounded-full bg-brand-turquoise animate-pulse" />
             {tx.badge}
           </div>
 
-          <h1 className="text-hero-xl text-foreground mb-2">
-            {tx.headline1}
-          </h1>
-          <h1 className="text-hero-xl mb-6" style={{
-            background: 'linear-gradient(135deg, #63b9d6 0%, #f6bfd1 100%)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text'
-          }}>
-            {tx.headline2}
+          <h1 className="text-hero-xl text-foreground mb-6">
+            <span className="block">{tx.headline1}</span>
+            <span className="block text-secondary-foreground">{tx.headline2}</span>
           </h1>
 
-          <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8 max-w-md font-medium">
+          <p className="text-pretty text-base md:text-lg text-muted-foreground leading-relaxed mb-8 max-w-md font-medium">
             {tx.sub}
           </p>
 

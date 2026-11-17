@@ -45,13 +45,13 @@ export default function TestimonialsSection({ lang }: TestimonialsSectionProps) 
 
       <div className="max-w-5xl mx-auto px-5 md:px-8 relative z-10">
         <div className="text-center mb-12">
-          <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-3">
+          <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent-foreground mb-3">
             {lang === 'es' ? 'Para quién es' : 'Who it is for'}
           </p>
           <h2 className="text-hero-md text-foreground mb-3">
             {lang === 'es' ? 'Hecho para quienes llevan un negocio.' : 'Built for people who run a business.'}
           </h2>
-          <p className="text-sm text-muted-foreground max-w-xl mx-auto">
+          <p className="text-pretty text-sm text-muted-foreground max-w-xl mx-auto">
             {lang === 'es'
               ? 'La demo incluye dos perfiles de prueba: dueño y contador.'
               : 'The demo includes two test profiles: owner and accountant.'}

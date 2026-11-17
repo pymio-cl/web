@@ -107,7 +107,7 @@ export default function HowItWorksSection({ lang }: HowItWorksSectionProps) {
         >
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-3">{tx.eyebrow}</p>
           <h2 className="text-hero-md text-white mb-4">{tx.title}</h2>
-          <p className="text-base text-white/60 max-w-xl mx-auto leading-relaxed">{tx.subtitle}</p>
+          <p className="text-pretty text-base text-white/60 max-w-xl mx-auto leading-relaxed">{tx.subtitle}</p>
         </div>
 
         {/* Steps grid */}
@@ -160,7 +160,7 @@ export default function HowItWorksSection({ lang }: HowItWorksSectionProps) {
         >
           <a
             href="#download"
-            className="inline-flex items-center gap-3 bg-accent text-white px-8 py-4 rounded-2xl text-base font-bold hover:bg-primary transition-all duration-300 shadow-xl hover:shadow-accent/30 hover:-translate-y-0.5 active:translate-y-0"
+            className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-2xl text-base font-bold hover:bg-secondary transition-all duration-300 shadow-xl hover:shadow-primary/25 hover:-translate-y-0.5 active:translate-y-0"
           >
             <Icon name="UserGroupIcon" size={20} variant="solid" />
             {tx.cta}

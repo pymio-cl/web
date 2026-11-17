@@ -99,17 +99,17 @@ const t = {
 const colorMap = {
   primary: {
     bg:      'bg-secondary',
-    icon:    'text-primary',
-    tag:     'bg-primary/10 text-primary',
+    icon:    'text-primary-foreground',
+    tag:     'bg-primary/10 text-primary-foreground',
     border:  'border-primary/20',
     hover:   'hover:border-primary/50 hover:shadow-primary/10',
   },
   accent: {
-    bg:      'bg-accent/10',
-    icon:    'text-accent',
-    tag:     'bg-accent/10 text-accent',
-    border:  'border-accent/20',
-    hover:   'hover:border-accent/40 hover:shadow-accent/10',
+    bg:      'bg-accent/20',
+    icon:    'text-accent-foreground',
+    tag:     'bg-accent/20 text-accent-foreground',
+    border:  'border-accent/35',
+    hover:   'hover:border-accent/60 hover:shadow-accent/10',
   },
 };
 
@@ -152,9 +152,9 @@ export default function FeaturesSection({ lang }: FeaturesSectionProps) {
           className="text-center mb-14 animate-on-scroll opacity-100"
           style={{ animation: 'fadeSlideIn 0.7s ease-out 0s both' }}
         >
-          <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-3">{tx.eyebrow}</p>
+          <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent-foreground mb-3">{tx.eyebrow}</p>
           <h2 className="text-hero-md text-foreground mb-4">{tx.title}</h2>
-          <p className="text-base text-muted-foreground max-w-xl mx-auto leading-relaxed">{tx.subtitle}</p>
+          <p className="text-pretty text-base text-muted-foreground max-w-xl mx-auto leading-relaxed">{tx.subtitle}</p>
         </div>
 
         {/* Bento Grid — 3 columns on lg */}
@@ -192,7 +192,7 @@ export default function FeaturesSection({ lang }: FeaturesSectionProps) {
               <div className="bg-secondary rounded-xl p-4 border border-primary/15">
                 <div className="flex items-center gap-2 mb-2">
                   <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                  <span className="text-xs font-bold text-primary uppercase tracking-wider">
+                  <span className="text-xs font-bold text-primary-foreground uppercase tracking-wider">
                     {lang === 'es' ? 'Conectado al SII' : 'Connected to SII'}
                   </span>
                 </div>
@@ -250,7 +250,7 @@ export default function FeaturesSection({ lang }: FeaturesSectionProps) {
               animate-on-scroll opacity-100
               lg:row-span-2 md:col-span-2 lg:col-span-1
               rounded-2xl border ${colorMap[voz.color as keyof typeof colorMap].border}
-              bg-primary p-7 flex flex-col gap-5
+              bg-foreground p-7 flex flex-col gap-5
               hover:shadow-xl hover:shadow-primary/20
               transition-all duration-300 group relative overflow-hidden
             `}

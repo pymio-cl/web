@@ -10,94 +10,87 @@ const t = {
   es: {
     // Hero
     badge: 'Nuestra Historia',
-    heroTitle: 'Construido para el emprendedor chileno.',
+    heroTitle: 'Hecho para quienes mueven Chile trabajando.',
     heroSubtitle:
-      'Pymio nació en una feria de Santiago. No en una oficina de Silicon Valley.',
+      'Pymio nació escuchando a maestros, contratistas y dueños de oficio — no en una oficina de Silicon Valley.',
 
     // Mission
     missionLabel: 'Nuestra Misión',
-    missionTitle: 'Tecnología que habla tu idioma',
+    missionTitle: 'Administración y SII al alcance de tu voz',
     missionBody:
-      'Millones de pequeños negocios en Chile operan con cuadernos, calculadoras y memoria. No porque les falte inteligencia — sino porque las herramientas disponibles fueron diseñadas para contadores y grandes empresas, no para la señora Rosa de la feria o el Rodrigo de la tienda de barrio. Pymio existe para cambiar eso: una app gratuita, en español chileno, que cualquier persona puede usar desde el primer día.',
+      'Miles de gásfiter, electricistas, mecánicos, contratistas y comerciantes en Chile son expertos en su oficio, pero pierden horas valiosas peleando con planillas, cuadernos o portales complejos para emitir una factura. No les falta capacidad — les faltan herramientas hechas para su realidad. Pymio existe para eliminar esa barrera: una app en español chileno donde ordenar tus ventas, clientes y documentos tributarios es tan simple como hablar.',
 
     // Why
     whyLabel: '¿Por qué Pymio?',
     whyCards: [
       {
         icon: 'MapPinIcon',
-        title: 'Hecho en Chile, para Chile',
-        body: 'Integración nativa con el SII, terminología local y soporte en español chileno — no en español genérico.',
+        title: 'Pensado en Chile y el SII',
+        body: 'Diseñado desde cero para la realidad tributaria local: manejo de RUT, giros y flujo preparado para facturación electrónica sin enredos.',
       },
       {
         icon: 'BanknotesIcon',
-        title: 'Gratis de verdad',
-        body: 'Sin prueba de 14 días. Sin tarjeta de crédito. Sin letra chica. Gratis para siempre para negocios pequeños.',
+        title: 'Empieza sin barreras',
+        body: 'Sin contratos eternos ni costos ocultos para partir. Ordena tus ventas y clientes desde el primer día sin complicaciones.',
       },
       {
         icon: 'MicrophoneIcon',
-        title: 'Sin conocimientos técnicos',
-        body: 'Diseñado para personas que nunca han usado software de gestión. Si puedes hablar, puedes usar Pymio.',
+        title: 'La voz como interfaz',
+        body: 'Creado para quienes trabajan con las manos y no tienen tiempo para menús infinitos. Si sabes contarlo, sabes registrarlo.',
       },
       {
         icon: 'ShieldCheckIcon',
-        title: 'Tus datos, seguros',
-        body: 'Almacenamiento encriptado, sin venta de datos a terceros. Tu negocio es tuyo.',
+        title: 'Tus datos, bajo tu control',
+        body: 'Información respaldada de forma segura y privada. Jamás vendemos los datos de tu negocio a terceros.',
       },
     ],
 
     // Story
     storyLabel: 'La Historia',
-    storyTitle: 'De una feria a una app',
+    storyTitle: 'Del oficio real a una solución simple',
     storyBlocks: [
       {
-        year: '2023',
-        heading: 'El problema real',
-        text: 'Nuestro fundador, Matías, visitaba ferias y tiendas de barrio en Santiago. Vio el mismo patrón una y otra vez: dueños talentosos perdiendo horas en papeles, sin saber cuánto ganaban al día. Las apps existentes eran caras, complicadas o simplemente no hablaban chileno.',
-      },
-      {
-        year: '2024',
-        heading: 'El primer prototipo',
-        text: 'Con un equipo de tres personas — un desarrollador, una diseñadora UX y una contadora — construimos el primer prototipo y lo pusimos en manos de 20 emprendedores reales. Sus comentarios fueron brutalmente honestos y completamente invaluables.',
-      },
-      {
         year: '2025',
-        heading: 'Pymio nace',
-        text: 'Después de más de 300 entrevistas con dueños de negocios, lanzamos Pymio. El asistente de voz fue la función más pedida: "Quiero registrar una venta sin dejar de atender al cliente." Hoy, miles de negocios chilenos la usan cada día.',
+        heading: 'Escuchar antes de programar',
+        text: 'Conversando con emprendedores, maestros de oficio y pequeños comercios en Chile, vimos siempre lo mismo: talento de sobra para trabajar, pero frustración total con los sistemas actuales. El software tradicional estaba hecho para oficinas, no para quien está en terreno o atendiendo un local.',
+      },
+      {
+        year: '2026',
+        heading: 'Construyendo Pymio',
+        text: 'Unimos experiencia real en retail y puntos de venta, ingeniería de software moderna y asesoría tributaria cercana. Formalizamos Pymio en Chile y diseñamos un asistente impulsado por inteligencia artificial que entiende cómo hablamos los chilenos.',
+      },
+      {
+        year: 'Hoy',
+        heading: 'Tecnología que no estorba',
+        text: 'Seguimos desarrollando Pymio codo a codo con emprendedores reales. Nuestro foco es claro: que registrar una venta, gestionar clientes o preparar una factura tome segundos con la voz, devolviéndote tiempo para tu negocio y tu familia.',
       },
     ],
 
     // Team
     teamLabel: 'El Equipo',
-    teamTitle: 'Personas reales, detrás de una app real',
+    teamTitle: 'Personas reales detrás de Pymio',
     teamSubtitle:
-      'Somos un equipo pequeño con una convicción grande: la tecnología debe servir a las personas, no al revés.',
+      'Combinamos experiencia en comercio local, desarrollo de software e impuestos para crear una herramienta honesta y fácil de usar.',
     teamMembers: [
       {
-        name: 'Matías Fuentes',
-        role: 'Fundador & CEO',
-        bio: 'Ex-emprendedor de feria. Vendió completos antes de escribir código.',
-        initials: 'MF',
+        name: 'Fabiana Castro Marcano',
+        role: 'Fundadora & CEO',
+        bio: 'Experta en Puntos de Venta y Retail, con más de 10 años de experiencia en el mercado chileno.',
+        initials: 'FC',
         color: 'bg-primary',
       },
       {
-        name: 'Valentina Rojas',
-        role: 'Diseño UX',
-        bio: 'Diseña para su abuela primero. Si ella lo entiende, todos lo entienden.',
-        initials: 'VR',
+        name: 'Felipe Aguilera Millacura',
+        role: 'Fundador y Desarrollador',
+        bio: 'Diseña pensando en su abuela primero: si la tecnología no es clara para todos, aún no está terminada.',
+        initials: 'FA',
         color: 'bg-accent',
       },
       {
-        name: 'Ignacio Soto',
-        role: 'Ingeniería',
-        bio: 'Obsesionado con que la app funcione sin internet en zonas con mala señal.',
-        initials: 'IS',
-        color: 'bg-primary/80',
-      },
-      {
-        name: 'Camila Herrera',
+        name: 'Jonathan Mateluna',
         role: 'Contabilidad & SII',
-        bio: 'Contadora que habla en humano, no en jerga tributaria.',
-        initials: 'CH',
+        bio: 'Contador que traduce la normativa tributaria chilena al español simple, sin jerga innecesaria.',
+        initials: 'JM',
         color: 'bg-accent/80',
       },
     ],
@@ -105,118 +98,112 @@ const t = {
     // Values
     valuesLabel: 'Lo que nos guía',
     values: [
-      { icon: 'HeartIcon', label: 'Empatía primero' },
+      { icon: 'HeartIcon', label: 'Empatía con el oficio' },
       { icon: 'LightBulbIcon', label: 'Simplicidad radical' },
-      { icon: 'HandRaisedIcon', label: 'Honestidad total' }
+      { icon: 'HandRaisedIcon', label: 'Transparencia total' },
+      { icon: 'UserGroupIcon', label: 'Cercanía real' },
     ],
 
     // CTA
-    ctaTitle: '¿Listo para ordenar tu negocio?',
-    ctaBody: 'Únete a miles de emprendedores chilenos que ya controlan sus ventas con Pymio.',
-    ctaBtn: 'Descargar Gratis',
+    ctaTitle: '¿Listo para simplificar tu negocio?',
+    ctaBody: 'Descubre cómo llevar el control de tus ventas y clientes hablando en tu propio idioma.',
+    ctaBtn: 'Comenzar con Pymio',
     ctaSecondary: 'Volver al inicio',
   },
   en: {
     badge: 'Our Story',
-    heroTitle: 'Built for the Chilean entrepreneur.',
+    heroTitle: 'Built for the tradespeople and merchants who move Chile.',
     heroSubtitle:
-      'Pymio was born at a Santiago street market. Not in a Silicon Valley office.',
+      'Pymio was born listening to contractors, tradespeople, and local shop owners — not in a Silicon Valley boardroom.',
 
     missionLabel: 'Our Mission',
-    missionTitle: 'Technology that speaks your language',
+    missionTitle: 'Business & SII tax admin at the speed of your voice',
     missionBody:
-      'Millions of small businesses in Chile operate with notebooks, calculators, and memory. Not because they lack intelligence — but because the available tools were designed for accountants and large corporations, not for Rosa at the market stall or Rodrigo at the corner shop. Pymio exists to change that: a free app, in Chilean Spanish, that anyone can use from day one.',
+      'Thousands of plumbers, electricians, mechanics, contractors, and local merchants in Chile are masters of their craft, yet lose hours wrestling with notebooks, spreadsheets, or complex tax portals just to issue an invoice. They don’t lack capability — they lack tools built for how they work. Pymio removes that barrier: an app in natural Chilean Spanish where managing sales, customers, and tax workflows is as simple as speaking.',
 
     whyLabel: 'Why Pymio?',
     whyCards: [
       {
         icon: 'MapPinIcon',
-        title: 'Made in Chile, for Chile',
-        body: 'Native SII integration, local terminology, and support in Chilean Spanish — not generic Spanish.',
+        title: 'Built for Chile & SII',
+        body: 'Designed from the ground up for local tax workflows: RUT validation, business activities, and electronic invoicing readiness without the headache.',
       },
       {
         icon: 'BanknotesIcon',
-        title: 'Truly free',
-        body: 'No 14-day trial. No credit card. No fine print. Free forever for small businesses.',
+        title: 'Zero friction to start',
+        body: 'No endless contracts or hidden fees to get started. Organize your sales and customers from day one.',
       },
       {
         icon: 'MicrophoneIcon',
-        title: 'No technical knowledge needed',
-        body: 'Designed for people who have never used management software. If you can speak, you can use Pymio.',
+        title: 'Voice as the interface',
+        body: 'Made for people who work with their hands and don’t have time for endless menus. If you can say it, you can log it.',
       },
       {
         icon: 'ShieldCheckIcon',
-        title: 'Your data, secure',
-        body: 'Encrypted storage, no data sold to third parties. Your business is yours.',
+        title: 'Your data stays yours',
+        body: 'Encrypted, secure storage with strict privacy. We never sell your business data to third parties.',
       },
     ],
 
     storyLabel: 'The Story',
-    storyTitle: 'From a market stall to an app',
+    storyTitle: 'From real-world trades to a simple tool',
     storyBlocks: [
       {
-        year: '2023',
-        heading: 'The real problem',
-        text: 'Our founder, Matías, visited markets and corner shops in Santiago. He saw the same pattern over and over: talented owners losing hours on paperwork, not knowing how much they earned each day. Existing apps were expensive, complicated, or simply didn\'t speak Chilean.',
-      },
-      {
-        year: '2024',
-        heading: 'The first prototype',
-        text: 'With a team of three — a developer, a UX designer, and an accountant — we built the first prototype and put it in the hands of 20 real entrepreneurs. Their feedback was brutally honest and completely invaluable.',
-      },
-      {
         year: '2025',
-        heading: 'Pymio launches',
-        text: 'After more than 300 interviews with business owners, we launched Pymio. The voice assistant was the most requested feature: "I want to log a sale without stopping to serve the customer." Today, thousands of Chilean businesses use it every day.',
+        heading: 'Listening before coding',
+        text: 'Talking with Chilean tradespeople, contractors, and neighborhood shop owners, we saw the same pattern everywhere: immense skill in their craft, paired with total frustration toward existing software built for desk accountants rather than people on the job.',
+      },
+      {
+        year: '2026',
+        heading: 'Building Pymio',
+        text: 'We brought together deep retail and POS experience, modern software engineering, and approachable tax expertise. We registered Pymio in Chile and built an AI voice assistant that genuinely understands Chilean Spanish.',
+      },
+      {
+        year: 'Today',
+        heading: 'Technology that stays out of the way',
+        text: 'We continue shaping Pymio alongside real entrepreneurs. Our goal is straightforward: logging a sale, managing clients, or preparing an invoice should take seconds by voice — giving you back time for your work and family.',
       },
     ],
 
     teamLabel: 'The Team',
-    teamTitle: 'Real people behind a real app',
+    teamTitle: 'Real people behind Pymio',
     teamSubtitle:
-      'We are a small team with a big conviction: technology should serve people, not the other way around.',
+      'We combine local retail expertise, software engineering, and accounting know-how to build an honest, easy-to-use tool.',
     teamMembers: [
       {
-        name: 'Matías Fuentes',
+        name: 'Fabiana Castro Marcano',
         role: 'Founder & CEO',
-        bio: 'Former street market entrepreneur. Sold hot dogs before writing code.',
-        initials: 'MF',
+        bio: 'Expert in Point of Sale and Retail, with 10+ years of experience in the Chilean market.',
+        initials: 'FC',
         color: 'bg-primary',
       },
       {
-        name: 'Valentina Rojas',
-        role: 'UX Design',
-        bio: 'Designs for her grandmother first. If she gets it, everyone gets it.',
-        initials: 'VR',
+        name: 'Felipe Aguilera Millacura',
+        role: 'Founder & Developer',
+        bio: 'Designs for his grandmother first — if technology isn’t clear to everyone, it isn’t finished yet.',
+        initials: 'FA',
         color: 'bg-accent',
       },
       {
-        name: 'Ignacio Soto',
-        role: 'Engineering',
-        bio: 'Obsessed with making the app work offline in areas with poor signal.',
-        initials: 'IS',
-        color: 'bg-primary/80',
-      },
-      {
-        name: 'Camila Herrera',
+        name: 'Jonathan Mateluna',
         role: 'Accounting & SII',
-        bio: 'An accountant who speaks in plain language, not tax jargon.',
-        initials: 'CH',
+        bio: 'An accountant who translates Chilean tax rules into plain, everyday language.',
+        initials: 'JM',
         color: 'bg-accent/80',
       },
     ],
 
     valuesLabel: 'What guides us',
     values: [
-      { icon: 'HeartIcon', label: 'Empathy first' },
+      { icon: 'HeartIcon', label: 'Respect for the craft' },
       { icon: 'LightBulbIcon', label: 'Radical simplicity' },
       { icon: 'HandRaisedIcon', label: 'Total honesty' },
-      { icon: 'UserGroupIcon', label: 'Community focus' },
+      { icon: 'UserGroupIcon', label: 'Real closeness' },
     ],
 
-    ctaTitle: 'Ready to take control of your business?',
-    ctaBody: 'Join thousands of Chilean entrepreneurs already managing their sales with Pymio.',
-    ctaBtn: 'Download Free',
+    ctaTitle: 'Ready to simplify your business?',
+    ctaBody: 'See how easy it is to track sales and customers just by speaking in your own words.',
+    ctaBtn: 'Get Started with Pymio',
     ctaSecondary: 'Back to home',
   },
 };
@@ -269,10 +256,10 @@ export default function AboutPage() {
               {/* Right: visual stat block */}
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { value: '300+', label: lang === 'es' ? 'Entrevistas con dueños' : 'Owner interviews' },
-                  { value: '2026', label: lang === 'es' ? 'Año de lanzamiento' : 'Launch year' },
-                  { value: '100%', label: lang === 'es' ? 'Gratuito para siempre' : 'Free forever' },
-                  { value: 'CL', label: lang === 'es' ? 'Hecho en Chile' : 'Made in Chile' },
+                  { value: '10+', label: lang === 'es' ? 'Años de experiencia en retail' : 'Years in Chilean retail' },
+                  { value: '2026', label: lang === 'es' ? 'Nacimiento de Pymio' : 'Pymio founded' },
+                  { value: '100%', label: lang === 'es' ? 'Enfocado en simplicidad' : 'Simplicity-first design' },
+                  { value: 'CL', label: lang === 'es' ? 'Hecho en Chile para el SII' : 'Built in Chile for SII' },
                 ].map((stat) => (
                   <div
                     key={stat.label}
@@ -380,7 +367,7 @@ export default function AboutPage() {
 
         {/* ── Team ── */}
         <section className="py-16 md:py-24">
-          <div className="max-w-6xl mx-auto px-5 md:px-8">
+          <div className="max-w-5xl mx-auto px-5 md:px-8">
             <div className="text-center mb-14">
               <span className="text-xs font-bold uppercase tracking-widest text-accent mb-3 block">
                 {tx.teamLabel}
@@ -391,11 +378,11 @@ export default function AboutPage() {
               <p className="text-muted-foreground max-w-xl mx-auto text-base">{tx.teamSubtitle}</p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {tx.teamMembers.map((member) => (
                 <div
                   key={member.name}
-                  className="bg-background border border-border rounded-3xl p-6 flex flex-col items-center text-center gap-4 hover:border-primary/40 hover:-translate-y-1 transition-all duration-300"
+                  className="bg-background border border-border rounded-3xl p-7 flex flex-col items-center text-center gap-4 hover:border-primary/40 hover:-translate-y-1 transition-all duration-300"
                 >
                   {/* Avatar */}
                   <div

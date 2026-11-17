@@ -6,6 +6,12 @@ module.exports = {
     container: { center: true, padding: '1rem' },
     extend: {
       colors: {
+        brand: {
+          sky: 'var(--brand-sky)',
+          turquoise: 'var(--brand-turquoise)',
+          pink: 'var(--brand-pink)',
+          dark: 'var(--brand-dark)',
+        },
         background:  { DEFAULT: 'var(--background)' },
         foreground:  { DEFAULT: 'var(--foreground)' },
         primary:     { DEFAULT: 'var(--primary)',     foreground: 'var(--primary-foreground)' },

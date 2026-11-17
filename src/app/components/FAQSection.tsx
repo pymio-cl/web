@@ -92,7 +92,7 @@ export default function FAQSection({ lang }: FAQSectionProps) {
           className="text-center mb-14 animate-on-scroll opacity-100"
           style={{ animation: 'fadeSlideIn 0.7s ease-out 0s both' }}
         >
-          <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-3">{tx.eyebrow}</p>
+          <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent-foreground mb-3">{tx.eyebrow}</p>
           <h2 className="text-hero-md text-foreground">{tx.title}</h2>
         </div>
 

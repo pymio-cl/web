@@ -86,9 +86,9 @@ export default function PricingSection({ lang }: PricingSectionProps) {
           className="text-center mb-14 animate-on-scroll opacity-100"
           style={{ animation: 'fadeSlideIn 0.7s ease-out 0s both' }}
         >
-          <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-3">{tx.eyebrow}</p>
+          <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent-foreground mb-3">{tx.eyebrow}</p>
           <h2 className="text-hero-md text-foreground mb-4">{tx.title}</h2>
-          <p className="text-base text-muted-foreground max-w-xl mx-auto leading-relaxed">{tx.subtitle}</p>
+          <p className="text-pretty text-base text-muted-foreground max-w-xl mx-auto leading-relaxed">{tx.subtitle}</p>
         </div>
 
         {/* Single pricing card */}
@@ -103,7 +103,7 @@ export default function PricingSection({ lang }: PricingSectionProps) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               {/* Left: price + CTA */}
               <div className="flex flex-col">
-                <span className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full bg-secondary text-primary self-start mb-5 border border-primary/20">
+                <span                 className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full bg-secondary text-secondary-foreground self-start mb-5 border border-primary/20">
                   {tx.plan.badge}
                 </span>
                 <h3 className="text-2xl font-extrabold text-foreground mb-2 tracking-tight">{tx.plan.name}</h3>
@@ -129,7 +129,7 @@ export default function PricingSection({ lang }: PricingSectionProps) {
                 {tx.plan.features.map((feature, idx) => (
                   <div key={idx} className="flex items-center gap-3">
                     <div className="w-5 h-5 rounded-full bg-accent/15 flex items-center justify-center flex-shrink-0">
-                      <Icon name="CheckIcon" size={12} className="text-accent" variant="solid" />
+                      <Icon name="CheckIcon" size={12} className="text-accent-foreground" variant="solid" />
                     </div>
                     <span className="text-sm font-semibold text-foreground/85">{feature}</span>
                   </div>
@@ -141,7 +141,7 @@ export default function PricingSection({ lang }: PricingSectionProps) {
           {/* Bottom note */}
           <div className="px-8 md:px-12 py-5 bg-secondary/50 border-t border-border flex items-center gap-3">
             <Icon name="HeartIcon" size={16} className="text-primary flex-shrink-0" variant="solid" />
-            <p className="text-sm text-muted-foreground font-medium">
+            <p className="text-pretty text-sm text-muted-foreground font-medium">
               {lang === 'es' ?'Pymio se financia con partnerships con contadores y servicios financieros — nunca con tus datos ni con publicidad invasiva.' :'Pymio is funded through partnerships with accountants and financial services — never with your data or invasive advertising.'}
             </p>
           </div>
