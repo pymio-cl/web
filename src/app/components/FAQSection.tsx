@@ -10,53 +10,53 @@ interface FAQSectionProps {
 const t = {
   es: {
     eyebrow: 'Preguntas frecuentes',
-    title:   '¿Tienes dudas? Las respondemos.',
+    title:   'Respuestas sobre la demo.',
     faqs: [
       {
-        q: '¿Pymio está conectado al SII real?',
+        q: '¿Pymio está conectado al SII?',
         a: 'Todavía no. La demo prepara borradores con el formato y el IVA correspondientes, pero no se transmiten al SII ni tienen validez tributaria.',
       },
       {
         q: '¿El Asistente de Voz entiende el español chileno?',
-        a: 'Reconoce voz en español de Chile (es-CL) y usa Gemini para interpretar la orden, por ejemplo "Registra una venta de $10.000 en efectivo". Necesitas tu propia clave gratuita de Google AI Studio, que se guarda cifrada en tu dispositivo.',
+        a: 'La app de desarrollo usa Gemini para interpretar comandos en español de Chile y preparar borradores de venta. Necesitas internet y tu propia clave de Google AI Studio. El texto del comando se envía a Google para interpretarlo.',
       },
       {
-        q: '¿Mis datos y ventas están seguros?',
-        a: 'La versión actual usa un servicio de desarrollo para ventas e inventario y requiere conexión. No ingreses información real o sensible. Tu clave de Gemini se guarda en el almacenamiento seguro del dispositivo y el texto de las órdenes de voz se envía a Google para interpretarlo.',
+        q: '¿Puedo ingresar datos reales de mi negocio?',
+        a: 'No. La app está en desarrollo y usa un servicio online de prueba para ventas e inventario. No ingreses información real o sensible.',
       },
       {
         q: '¿Funciona sin internet (offline)?',
-        a: 'La versión actual requiere conexión para ventas, inventario y documentos. La sincronización offline segura todavía no está implementada.',
+        a: 'No. La app actual necesita conexión para ventas, inventario y documentos. La sincronización offline segura todavía no está implementada.',
       },
       {
-        q: '¿Cuánto cuesta? ¿En qué plataformas está?',
-        a: 'La demo es gratuita y los precios futuros no están definidos. La app está hecha con Flutter y apunta a Android, iOS, web y macOS; aún no está publicada en las tiendas.',
+        q: '¿Cuánto cuesta y dónde puedo usarla?',
+        a: 'El recorrido web es gratuito. La app de desarrollo aún no está publicada en las tiendas y sus precios futuros no están definidos.',
       },
     ],
   },
   en: {
     eyebrow: 'Frequently asked questions',
-    title:   'Got questions? We\'ve got answers.',
+    title:   'About the demo.',
     faqs: [
       {
-        q: 'Is Pymio connected to the real SII?',
+        q: 'Is Pymio connected to the SII?',
         a: 'Not yet. The demo prepares drafts with the applicable format and VAT, but they are not transmitted to the SII and have no tax validity.',
       },
       {
         q: 'Does the Voice Assistant understand Chilean Spanish?',
-        a: 'It recognizes Chilean Spanish speech (es-CL) and uses Gemini to interpret the command, e.g. "Register a $10,000 cash sale". You need your own free Google AI Studio key, stored encrypted on your device.',
+        a: 'The development app uses Gemini to interpret commands in Chilean Spanish and prepare sales drafts. It requires internet and your own Google AI Studio key. Command text is sent to Google for interpretation.',
       },
       {
-        q: 'Is my sales data secure?',
-        a: 'The current version uses a development service for sales and inventory and requires an internet connection. Do not enter real or sensitive information. Your Gemini key is kept in secure device storage, and voice-command text is sent to Google for interpretation.',
+        q: 'Can I enter real business data?',
+        a: 'No. The app is in development and uses an online test service for sales and inventory. Do not enter real or sensitive information.',
       },
       {
         q: 'Does it work without internet (offline)?',
-        a: 'The current version requires an internet connection for sales, inventory and documents. Secure offline synchronization is not implemented yet.',
+        a: 'No. The current app needs an internet connection for sales, inventory, and documents. Secure offline synchronization is not implemented yet.',
       },
       {
-        q: 'How much does it cost? Which platforms?',
-        a: 'The demo is free and future pricing is undecided. The app is built with Flutter and targets Android, iOS, web and macOS; it is not published in the stores yet.',
+        q: 'How much does it cost, and where can I use it?',
+        a: 'The web tour is free. The development app is not available in app stores, and future pricing has not been decided.',
       },
     ],
   },
@@ -139,7 +139,7 @@ export default function FAQSection({ lang }: FAQSectionProps) {
           style={{ animation: 'fadeSlideIn 0.7s ease-out 0.5s both' }}
         >
           <p className="text-sm text-muted-foreground mb-4">
-            {lang === 'es' ? '¿Tienes más preguntas?' : 'Have more questions?'}
+            {lang === 'es' ? '¿Te quedó alguna duda?' : 'Still have a question?'}
           </p>
           <a
             href="mailto:hola@pymio.cl"

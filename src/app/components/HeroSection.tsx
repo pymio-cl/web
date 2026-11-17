@@ -11,36 +11,36 @@ interface HeroSectionProps {
 
 const t = {
   es: {
-    badge: 'Demo disponible · Para negocios chilenos',
+    badge: 'Demo de desarrollo · Para negocios chilenos',
     headline1: 'Tu negocio,',
     headline2: 'bajo control.',
-    sub: 'Prepara borradores de documentos tributarios, controla ventas e inventario y registra ventas con tu voz — en una app pensada para pymes chilenas.',
-    cta1: 'Probar la demo',
+    sub: 'Explora ejemplos de documentos tributarios, ventas, inventario y registro de ventas por voz. Las cifras son ilustrativas; no ingreses datos reales.',
+    cta1: 'Ver el recorrido',
     cta2: 'Ver cómo funciona',
     stats: [
-    { value: '4', label: 'Tipos de documento' },
-    { value: '19%', label: 'IVA calculado solo' },
-    { value: 'ES · EN', label: 'App bilingüe' }],
+    { value: '4', label: 'Tipos de documento de ejemplo' },
+    { value: '19%', label: 'IVA en borradores' },
+    { value: 'ES · EN', label: 'Disponible en dos idiomas' }],
 
-    storeApple: 'Próximamente',
-    storeGoogle: 'Próximamente',
-    trust: 'Versión de demostración · No ingreses datos reales'
+    storeApple: 'Aún no disponible',
+    storeGoogle: 'Aún no disponible',
+    trust: 'Versión de desarrollo · Usa solo datos de ejemplo'
   },
   en: {
-    badge: 'Demo available · For Chilean businesses',
+    badge: 'Development demo · For Chilean businesses',
     headline1: 'Your business,',
     headline2: 'in control.',
-    sub: 'Prepare tax-document drafts, track sales and inventory, and log sales with your voice — in one app built for Chilean small businesses.',
-    cta1: 'Try the demo',
+    sub: 'Explore sample tax documents, sales, inventory, and voice sales entry. Figures are illustrative; do not enter real business data.',
+    cta1: 'Take the tour',
     cta2: 'See how it works',
     stats: [
-    { value: '4', label: 'Document types' },
-    { value: '19%', label: 'VAT auto-calculated' },
-    { value: 'ES · EN', label: 'Bilingual app' }],
+    { value: '4', label: 'Sample document types' },
+    { value: '19%', label: 'VAT in sample drafts' },
+    { value: 'ES · EN', label: 'Available in two languages' }],
 
-    storeApple: 'Coming soon',
-    storeGoogle: 'Coming soon',
-    trust: 'Demo version · Do not enter real business data'
+    storeApple: 'Not available yet',
+    storeGoogle: 'Not available yet',
+    trust: 'Development version · Use sample data only'
   }
 };
 
@@ -182,7 +182,7 @@ export default function HeroSection({ lang }: HeroSectionProps) {
           <div className="relative z-10 w-56 md:w-64 aspect-[9/19] rounded-[3rem] overflow-hidden phone-shadow border-4 border-white/80 animate-float-phone">
             <AppImage
               src={imgSrc}
-              alt="Pymio app mockup showing sales dashboard with Chilean business data"
+              alt="Illustrative image for the Pymio business-management demo"
               fill
               className={`object-cover transition-opacity duration-300 ${imgVisible ? 'opacity-100' : 'opacity-0'}`}
               priority />
@@ -192,11 +192,11 @@ export default function HeroSection({ lang }: HeroSectionProps) {
             <div className="absolute bottom-0 left-0 right-0 p-4">
               <div className="bg-white/15 backdrop-blur-sm rounded-xl p-3 border border-white/20">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-white text-[10px] font-bold uppercase tracking-wider opacity-80">Ventas Hoy</span>
+                  <span className="text-white text-[10px] font-bold uppercase tracking-wider opacity-80">{lang === 'es' ? 'Ventas · Ejemplo' : 'Sales · Sample'}</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
                 </div>
                 <div className="text-white font-extrabold text-lg leading-none">$284.500</div>
-                <div className="text-white/70 text-[10px] mt-0.5">+12% vs ayer</div>
+                <div className="text-white/70 text-[10px] mt-0.5">{lang === 'es' ? 'Cifra ilustrativa' : 'Illustrative figure'}</div>
               </div>
             </div>
           </div>
@@ -230,19 +230,11 @@ export default function HeroSection({ lang }: HeroSectionProps) {
 
             {/* Profile / trust signal */}
             <div className="hidden lg:block lg:border-t border-border/40 border-dashed lg:pt-8">
-              <div className="flex -space-x-2 mb-3">
-                {[
-                { src: "", alt: 'Claudia Mora, dueña de tienda en Providencia, sonriendo' },
-                { src: "", alt: 'Roberto Fuentes, emprendedor en Maipú, con polo rojo' },
-                { src: "", alt: 'María José Soto, feriante en La Florida, con delantal' }].
-                map((av, i) =>
-                <div key={i} className="w-9 h-9 rounded-full overflow-hidden border-2 border-background relative">
-                    <AppImage src={av.src} alt={av.alt} fill className="object-cover" />
-                  </div>
-                )}
-              </div>
+              <p className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">
+                {lang === 'es' ? 'Recorrido ilustrativo' : 'Illustrative tour'}
+              </p>
               <p className="text-sm text-foreground font-semibold leading-snug max-w-[160px]">
-                {lang === 'es' ? 'Negocios reales, resultados reales.' : 'Real businesses, real results.'}
+                {lang === 'es' ? 'Perfiles y cifras de ejemplo.' : 'Sample profiles and figures.'}
               </p>
             </div>
           </div>
@@ -253,7 +245,7 @@ export default function HeroSection({ lang }: HeroSectionProps) {
       <div className="relative z-10 flex justify-center pb-8">
         <div className="flex flex-col items-center gap-2 opacity-40">
           <span className="text-xs font-medium text-muted-foreground uppercase tracking-widest">
-            {lang === 'es' ? 'Descubre más' : 'Discover more'}
+            {lang === 'es' ? 'Sigue explorando' : 'Keep exploring'}
           </span>
           <Icon name="ChevronDownIcon" size={20} className="text-muted-foreground animate-bounce" />
         </div>

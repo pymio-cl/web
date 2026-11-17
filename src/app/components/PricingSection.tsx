@@ -10,49 +10,47 @@ interface PricingSectionProps {
 const t = {
   es: {
     eyebrow:  'Precios',
-    title:    'Gratis durante la demo.',
-    subtitle: 'Pymio está en etapa de demostración y hoy no tiene costo. Los precios futuros aún no están definidos.',
+    title:    'El recorrido web es gratuito.',
+    subtitle: 'Pymio sigue en desarrollo. Los planes y precios futuros aún no están definidos.',
     plan: {
       badge:    'Versión demo',
-      name:     'Demo gratuita',
+      name:     'Recorrido de Pymio',
       price:    '$0',
-      period:   'durante la demo',
-      cta:      'Probar la demo',
+      period:   'sin costo',
+      cta:      'Ver el recorrido',
       features: [
-        'Documentos: boleta, factura, notas de débito y crédito',
-        'Panel con ingresos por día, semana, mes y año',
-        'Inventario con alerta de stock crítico',
-        'Asistente de voz Pymio (con tu clave de Gemini)',
-        'Validación de RUT e IVA 19% automático',
-        'App en español e inglés',
-        'Demo de desarrollo · No uses datos reales',
-        'Sin anuncios',
+        'Borradores de boletas, facturas y notas de débito y crédito',
+        'Resumen de ventas con cifras ilustrativas',
+        'Productos y alertas de stock de ejemplo',
+        'Recorrido de Voz Pymio; la app requiere internet y Gemini',
+        'Ejemplos de RUT e IVA del 19%',
+        'Recorrido disponible en español e inglés',
+        'No ingreses datos reales o sensibles',
       ],
     },
-    trustBadge: 'Sin tarjeta de crédito · Precios futuros por definir',
+    trustBadge: 'Demo web sin costo · No requiere registro',
   },
   en: {
     eyebrow:  'Pricing',
-    title:    'Free during the demo.',
-    subtitle: 'Pymio is in demo stage and currently costs nothing. Future pricing has not been decided.',
+    title:    'The web tour is free.',
+    subtitle: 'Pymio is still in development. Future plans and pricing have not been decided.',
     plan: {
       badge:    'Demo version',
-      name:     'Free demo',
+      name:     'Pymio tour',
       price:    '$0',
-      period:   'during the demo',
-      cta:      'Try the demo',
+      period:   'no cost',
+      cta:      'Take the tour',
       features: [
-        'Documents: receipt, invoice, debit and credit notes',
-        'Dashboard with day, week, month and year income',
-        'Inventory with critical-stock alerts',
-        'Pymio voice assistant (bring your Gemini key)',
-        'RUT validation and automatic 19% VAT',
-        'App in Spanish and English',
-        'Development demo · Do not use real data',
-        'No ads',
+        'Sample receipt, invoice, debit-note, and credit-note drafts',
+        'Sales summary with illustrative figures',
+        'Sample products and stock alerts',
+        'Voz Pymio tour; the app requires internet and Gemini',
+        'RUT and 19% VAT examples',
+        'Tour available in Spanish and English',
+        'Do not enter real or sensitive data',
       ],
     },
-    trustBadge: 'No credit card · Future pricing to be defined',
+    trustBadge: 'Free web tour · No registration required',
   },
 };
 
@@ -142,7 +140,7 @@ export default function PricingSection({ lang }: PricingSectionProps) {
           <div className="px-8 md:px-12 py-5 bg-secondary/50 border-t border-border flex items-center gap-3">
             <Icon name="HeartIcon" size={16} className="text-primary flex-shrink-0" variant="solid" />
             <p className="text-pretty text-sm text-muted-foreground font-medium">
-              {lang === 'es' ?'Pymio se financia con partnerships con contadores y servicios financieros — nunca con tus datos ni con publicidad invasiva.' :'Pymio is funded through partnerships with accountants and financial services — never with your data or invasive advertising.'}
+              {lang === 'es' ? 'Pymio sigue en desarrollo. La app no está lista para gestionar datos reales de un negocio.' : 'Pymio is still in development. The app is not ready to manage real business data.'}
             </p>
           </div>
         </div>

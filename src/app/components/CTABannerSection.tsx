@@ -9,18 +9,18 @@ interface CTABannerSectionProps {
 
 const t = {
   es: {
-    title:    'Tu negocio merece las mejores herramientas.',
-    subtitle: 'Prueba la demo de Pymio y mira cómo se vería la gestión de tu pyme en un solo lugar.',
-    cta1:     'Probar la demo',
+    title:    'Conoce el recorrido de Pymio.',
+    subtitle: 'Revisa ejemplos de documentos, ventas, inventario y Voz Pymio. Las cifras son ficticias; no ingreses datos reales.',
+    cta1:     'Ver el recorrido',
     cta2:     'Cómo funciona',
-    note:     'Versión de demostración · Apps iOS y Android próximamente',
+    note:     'App de desarrollo · Aún no disponible en tiendas',
   },
   en: {
-    title:    'Your business deserves the best tools.',
-    subtitle: 'Try the Pymio demo and see how running your small business could look in one place.',
-    cta1:     'Try the demo',
+    title:    'Explore the Pymio tour.',
+    subtitle: 'See sample documents, sales, inventory, and Voz Pymio. Figures are fictional; do not enter real business data.',
+    cta1:     'Take the tour',
     cta2:     'How it works',
-    note:     'Demo version · iOS and Android apps coming soon',
+    note:     'Development app · Not available in app stores yet',
   },
 };
 

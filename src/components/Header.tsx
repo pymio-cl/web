@@ -13,22 +13,22 @@ const t = {
   es: {
     features:    'Funciones',
     howItWorks:  'Cómo funciona',
-    testimonials:'Testimonios',
+    testimonials:'Para quién es',
     pricing:     'Precios',
     faq:         'Preguntas',
     about:       'Nosotros',
     contact:     'Contacto',
-    download:    'Probar la demo',
+    download:    'Ver el recorrido',
   },
   en: {
     features:    'Features',
     howItWorks:  'How It Works',
-    testimonials:'Testimonials',
+    testimonials:'Who it\'s for',
     pricing:     'Pricing',
     faq:         'FAQ',
     about:       'About',
     contact:     'Contact',
-    download:    'Try the demo',
+    download:    'Take the tour',
   },
 };
 

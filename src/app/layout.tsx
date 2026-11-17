@@ -23,8 +23,8 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://pymio.cl'),
-  title: 'Pymio — Tu negocio, bajo control',
-  description: 'Pymio es una app para pymes chilenas: documentos tributarios, ventas, inventario y registro de ventas por voz. Versión demo.',
+  title: 'Pymio — Demo de gestión para negocios chilenos',
+  description: 'Explora ejemplos de documentos tributarios, ventas, inventario y registro por voz. Pymio está en desarrollo; no ingreses datos reales.',
   icons: {
     icon: [{ url: '/favicon.ico', type: 'image/x-icon' }],
   },

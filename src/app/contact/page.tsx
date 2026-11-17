@@ -6,18 +6,18 @@ import Footer from '@/components/Footer';
 import Icon from '@/components/ui/AppIcon';
 
 type Lang = 'es' | 'en';
-type Category = '' | 'sii' | 'technical' | 'partnership' | 'billing' | 'other';
+type Category = '' | 'sii' | 'technical' | 'partnership' | 'other';
 
 const t = {
   es: {
-    badge: 'Estamos aquí para ayudarte',
-    heroTitle: 'Habla con el equipo Pymio.',
+    badge: 'Contacto',
+    heroTitle: 'Escríbenos a Pymio.',
     heroSubtitle:
-      'Somos un equipo chileno real. Respondemos en español, entendemos el SII y sabemos lo que significa llevar un negocio pequeño.',
+      'Cuéntanos qué necesitas saber sobre la demo. No incluyas datos personales ni información real de tu negocio.',
 
     // Form
-    formTitle: 'Envíanos un mensaje',
-    formSubtitle: 'Te respondemos en menos de 24 horas hábiles.',
+    formTitle: 'Prepara un correo',
+    formSubtitle: 'Al continuar, se abrirá tu aplicación de correo con el mensaje para que lo revises y envíes.',
     labelName: 'Nombre completo',
     labelEmail: 'Correo electrónico',
     labelPhone: 'Teléfono (opcional)',
@@ -28,26 +28,20 @@ const t = {
     placeholderEmail: 'Ej: maria@minegocio.cl',
     placeholderPhone: 'Ej: +56 9 1234 5678',
     placeholderCompany: 'Ej: Tienda La Esperanza',
-    placeholderMessage: 'Cuéntanos cómo podemos ayudarte...',
+    placeholderMessage: 'Escribe tu consulta sobre la demo...',
     placeholderCategory: 'Selecciona una categoría',
     categories: [
-      { value: 'sii', label: '🧾 Ayuda con el SII / Facturación' },
-      { value: 'technical', label: '🔧 Problema técnico con la app' },
-      { value: 'partnership', label: '🤝 Alianzas y colaboraciones' },
-      { value: 'billing', label: '💳 Consulta sobre planes' },
-      { value: 'other', label: '💬 Otra consulta' },
+      { value: 'sii', label: 'Documentos de ejemplo y SII' },
+      { value: 'technical', label: 'Uso de la demo' },
+      { value: 'partnership', label: 'Colaboraciones' },
+      { value: 'other', label: 'Otra consulta' },
     ],
-    submit: 'Enviar mensaje',
-    submitting: 'Enviando...',
-    successTitle: '¡Mensaje enviado!',
-    successBody:
-      'Gracias por escribirnos. Un miembro del equipo Pymio te contactará pronto.',
-    successReset: 'Enviar otro mensaje',
+    submit: 'Abrir aplicación de correo',
     required: 'Este campo es obligatorio',
     invalidEmail: 'Ingresa un correo válido',
 
     // Contact info
-    infoTitle: 'Información de contacto',
+    infoTitle: 'Correo de contacto',
     infoItems: [
       {
         icon: 'EnvelopeIcon',
@@ -55,74 +49,56 @@ const t = {
         value: 'hola@pymio.cl',
         href: 'mailto:hola@pymio.cl',
       },
-      {
-        icon: 'PhoneIcon',
-        label: 'WhatsApp',
-        value: '+56 9 8765 4321',
-        href: 'https://wa.me/56987654321',
-      },
-      {
-        icon: 'MapPinIcon',
-        label: 'Ubicación',
-        value: 'Santiago, Región Metropolitana, Chile',
-        href: null,
-      },
-      {
-        icon: 'ClockIcon',
-        label: 'Horario de atención',
-        value: 'Lun–Vie, 9:00–18:00 (CLT)',
-        href: null,
-      },
     ],
 
     // FAQ mini
-    faqTitle: 'Preguntas frecuentes de soporte',
+    faqTitle: 'Preguntas sobre la demo',
     faqs: [
       {
-        q: '¿Cuánto demoran en responder?',
-        a: 'Respondemos todos los mensajes en menos de 24 horas hábiles. Los problemas técnicos urgentes los atendemos el mismo día.',
+        q: '¿El recorrido web envía mi consulta?',
+        a: 'No. Al continuar se abre tu aplicación de correo con el mensaje preparado. Debes revisarlo y enviarlo desde allí.',
       },
       {
-        q: '¿Puedo llamar directamente?',
-        a: 'Por ahora atendemos por WhatsApp y correo. Estamos trabajando en soporte telefónico directo.',
+        q: '¿Pymio está conectado al SII?',
+        a: 'No. Los documentos que muestra la demo son borradores y no se transmiten al SII ni tienen validez tributaria.',
       },
       {
-        q: '¿Tienen soporte para el SII?',
-        a: 'Sí. Nuestro equipo incluye contadores con experiencia en el SII chileno. Podemos ayudarte con dudas de facturación electrónica.',
+        q: '¿Puedo incluir datos reales en mi consulta?',
+        a: 'No incluyas información personal ni datos reales o sensibles de tu negocio.',
       },
     ],
 
     // Category highlights
-    categoryTitle: '¿En qué podemos ayudarte?',
+    categoryTitle: 'Elige un tema para tu consulta',
     categoryCards: [
       {
         icon: 'DocumentTextIcon',
-        title: 'Ayuda con el SII',
-        body: 'Facturación electrónica, boletas, RUT, y todo lo que necesitas para cumplir con el Servicio de Impuestos Internos.',
+        title: 'Documentos de ejemplo',
+        body: 'La demo muestra borradores. No se conecta al SII ni emite documentos tributarios válidos.',
         tag: 'sii',
       },
       {
         icon: 'WrenchScrewdriverIcon',
-        title: 'Soporte técnico',
-        body: 'Problemas con la app, errores de sincronización, recuperación de datos o cualquier falla técnica.',
+        title: 'Uso de la demo',
+        body: 'Consulta sobre los ejemplos de ventas, inventario o el recorrido de Voz Pymio.',
         tag: 'technical',
       },
       {
         icon: 'HandshakeIcon',
-        title: 'Alianzas',
-        body: 'Integraciones, distribución, programas de referidos o colaboraciones con otras empresas y organizaciones.',
+        title: 'Colaboraciones',
+        body: 'Escríbenos si quieres conversar sobre una posible colaboración.',
         tag: 'partnership',
       },
     ],
   },
   en: {
-    badge: 'We\'re here to help',
-    heroTitle: 'Talk to the Pymio team.',
+    badge: 'Contact',
+    heroTitle: 'Email Pymio.',
     heroSubtitle:
-      'We\'re a real Chilean team. We respond in Spanish, understand the SII, and know what it means to run a small business.',
+      'Ask us about the demo. Do not include personal information or real business data.',
 
-    formTitle: 'Send us a message',
-    formSubtitle: 'We reply within 24 business hours.',
+    formTitle: 'Prepare an email',
+    formSubtitle: 'Continue to open your email app with the message ready to review and send.',
     labelName: 'Full name',
     labelEmail: 'Email address',
     labelPhone: 'Phone (optional)',
@@ -133,25 +109,19 @@ const t = {
     placeholderEmail: 'e.g. maria@mybusiness.cl',
     placeholderPhone: 'e.g. +56 9 1234 5678',
     placeholderCompany: 'e.g. La Esperanza Store',
-    placeholderMessage: 'Tell us how we can help you...',
+    placeholderMessage: 'Write your question about the demo...',
     placeholderCategory: 'Select a category',
     categories: [
-      { value: 'sii', label: '🧾 SII / Invoicing Help' },
-      { value: 'technical', label: '🔧 Technical Issue with the App' },
-      { value: 'partnership', label: '🤝 Partnerships & Collaborations' },
-      { value: 'billing', label: '💳 Plan Inquiry' },
-      { value: 'other', label: '💬 Other' },
+      { value: 'sii', label: 'Sample documents and SII' },
+      { value: 'technical', label: 'Using the demo' },
+      { value: 'partnership', label: 'Partnerships' },
+      { value: 'other', label: 'Other question' },
     ],
-    submit: 'Send message',
-    submitting: 'Sending...',
-    successTitle: 'Message sent!',
-    successBody:
-      'Thanks for reaching out. A Pymio team member will contact you shortly.',
-    successReset: 'Send another message',
+    submit: 'Open email app',
     required: 'This field is required',
     invalidEmail: 'Enter a valid email address',
 
-    infoTitle: 'Contact information',
+    infoTitle: 'Contact email',
     infoItems: [
       {
         icon: 'EnvelopeIcon',
@@ -159,60 +129,42 @@ const t = {
         value: 'hola@pymio.cl',
         href: 'mailto:hola@pymio.cl',
       },
-      {
-        icon: 'PhoneIcon',
-        label: 'WhatsApp',
-        value: '+56 9 8765 4321',
-        href: 'https://wa.me/56987654321',
-      },
-      {
-        icon: 'MapPinIcon',
-        label: 'Location',
-        value: 'Santiago, Región Metropolitana, Chile',
-        href: null,
-      },
-      {
-        icon: 'ClockIcon',
-        label: 'Support hours',
-        value: 'Mon–Fri, 9:00–18:00 (CLT)',
-        href: null,
-      },
     ],
 
-    faqTitle: 'Support FAQs',
+    faqTitle: 'About the demo',
     faqs: [
       {
-        q: 'How long does it take to get a reply?',
-        a: 'We respond to all messages within 24 business hours. Urgent technical issues are handled the same day.',
+        q: 'Does the web tour send my question?',
+        a: 'No. Continuing opens your email app with the message prepared. Review and send it from there.',
       },
       {
-        q: 'Can I call directly?',
-        a: 'For now we support via WhatsApp and email. We\'re working on direct phone support.',
+        q: 'Is Pymio connected to the SII?',
+        a: 'No. Documents in the demo are drafts. They are not sent to the SII and have no tax validity.',
       },
       {
-        q: 'Do you have SII support?',
-        a: 'Yes. Our team includes accountants experienced with the Chilean SII. We can help with electronic invoicing questions.',
+        q: 'Can I include real data in my question?',
+        a: 'Do not include personal information or real or sensitive business data.',
       },
     ],
 
-    categoryTitle: 'How can we help?',
+    categoryTitle: 'Choose a topic',
     categoryCards: [
       {
         icon: 'DocumentTextIcon',
-        title: 'SII Help',
-        body: 'Electronic invoicing, receipts, RUT, and everything you need to comply with Chile\'s Internal Revenue Service.',
+        title: 'Sample documents',
+        body: 'The demo shows drafts. It does not connect to the SII or issue valid tax documents.',
         tag: 'sii',
       },
       {
         icon: 'WrenchScrewdriverIcon',
-        title: 'Technical Support',
-        body: 'App issues, sync errors, data recovery, or any technical failure you\'re experiencing.',
+        title: 'Using the demo',
+        body: 'Ask about the sales, inventory, or Voz Pymio examples in the tour.',
         tag: 'technical',
       },
       {
         icon: 'HandshakeIcon',
         title: 'Partnerships',
-        body: 'Integrations, distribution, referral programs, or collaborations with other companies and organizations.',
+        body: 'Email us if you would like to discuss a possible collaboration.',
         tag: 'partnership',
       },
     ],
@@ -238,8 +190,6 @@ interface FormErrors {
 export default function ContactPage() {
   const [lang, setLang] = useState<Lang>('es');
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [submitted, setSubmitted] = useState(false);
-  const [submitting, setSubmitting] = useState(false);
   const [form, setForm] = useState<FormData>({
     name: '',
     email: '',
@@ -269,17 +219,17 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
-    setSubmitting(true);
-    setTimeout(() => {
-      setSubmitting(false);
-      setSubmitted(true);
-    }, 1200);
-  };
-
-  const handleReset = () => {
-    setSubmitted(false);
-    setForm({ name: '', email: '', phone: '', company: '', category: '', message: '' });
-    setErrors({});
+    const category = tx.categories.find((item) => item.value === form.category)?.label ?? form.category;
+    const subject = `${lang === 'es' ? 'Consulta sobre Pymio' : 'Pymio inquiry'}: ${category}`;
+    const body = [
+      `${lang === 'es' ? 'Nombre' : 'Name'}: ${form.name}`,
+      `${lang === 'es' ? 'Correo' : 'Email'}: ${form.email}`,
+      form.phone && `${lang === 'es' ? 'Teléfono' : 'Phone'}: ${form.phone}`,
+      form.company && `${lang === 'es' ? 'Negocio' : 'Business'}: ${form.company}`,
+      '',
+      form.message,
+    ].filter(Boolean).join('\n');
+    window.location.href = `mailto:hola@pymio.cl?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   const categoryTagColors: Record<string, string> = {
@@ -355,23 +305,6 @@ export default function ContactPage() {
                   <p className="text-sm text-muted-foreground">{tx.formSubtitle}</p>
                 </div>
 
-                {submitted ? (
-                  <div className="flex flex-col items-center justify-center py-16 text-center gap-5">
-                    <div className="w-20 h-20 rounded-full bg-emerald-100 flex items-center justify-center">
-                      <Icon name="CheckCircleIcon" size={40} className="text-emerald-600" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-extrabold text-foreground mb-2">{tx.successTitle}</h3>
-                      <p className="text-muted-foreground text-sm max-w-xs">{tx.successBody}</p>
-                    </div>
-                    <button
-                      onClick={handleReset}
-                      className="mt-2 px-6 py-2.5 rounded-full border border-border text-sm font-semibold text-foreground hover:bg-muted transition-colors"
-                    >
-                      {tx.successReset}
-                    </button>
-                  </div>
-                ) : (
                   <form onSubmit={handleSubmit} noValidate className="space-y-5">
                     {/* Name + Email */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -466,26 +399,12 @@ export default function ContactPage() {
 
                     <button
                       type="submit"
-                      disabled={submitting}
-                      className="w-full flex items-center justify-center gap-2.5 bg-primary text-primary-foreground py-3.5 rounded-xl font-bold text-sm hover:bg-accent transition-all duration-300 shadow-md hover:shadow-lg disabled:opacity-60 disabled:cursor-not-allowed"
+                      className="w-full flex items-center justify-center gap-2.5 bg-primary text-primary-foreground py-3.5 rounded-xl font-bold text-sm hover:bg-accent transition-all duration-300 shadow-md hover:shadow-lg"
                     >
-                      {submitting ? (
-                        <>
-                          <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none">
-                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
-                          </svg>
-                          {tx.submitting}
-                        </>
-                      ) : (
-                        <>
-                          <Icon name="PaperAirplaneIcon" size={16} variant="solid" />
-                          {tx.submit}
-                        </>
-                      )}
+                      <Icon name="PaperAirplaneIcon" size={16} variant="solid" />
+                      {tx.submit}
                     </button>
                   </form>
-                )}
               </div>
             </div>
 
@@ -526,7 +445,7 @@ export default function ContactPage() {
                 <div className="mt-8 pt-6 border-t border-white/20 flex items-center gap-2">
                   <span className="text-xl">🇨🇱</span>
                   <span className="text-xs text-primary-foreground/70 font-medium">
-                    {lang === 'es' ? 'Empresa chilena, soporte en español' : 'Chilean company, Spanish-first support'}
+                    {lang === 'es' ? 'Pymio · Chile' : 'Pymio · Chile'}
                   </span>
                 </div>
               </div>

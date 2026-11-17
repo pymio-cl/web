@@ -11,8 +11,8 @@ interface DemoModalProps {
 
 const t = {
   es: {
-    title: 'Tour de Pymio',
-    subtitle: 'Recorrido ilustrativo · Cifras de ejemplo, no son datos reales',
+    title: 'Recorrido por Pymio',
+    subtitle: 'Demo de desarrollo · Cifras ilustrativas',
     close: 'Cerrar',
     prev: 'Anterior',
     next: 'Siguiente',
@@ -22,9 +22,9 @@ const t = {
       {
         id: 'sii',
         tag: 'Documentos de prueba',
-        title: 'Crea documentos tributarios sin complicaciones',
+        title: 'Revisa borradores de documentos tributarios',
         description:
-          'Prepara borradores de boletas y facturas. Pymio valida el RUT y calcula el IVA, pero el documento no se transmite al SII ni tiene validez tributaria.',
+          'La app prepara borradores de boletas y facturas, valida el formato del RUT y calcula el IVA. No envía documentos al SII ni tienen validez tributaria.',
         highlight: 'IVA 19% calculado · RUT validado · Sin envío al SII',
         iconBg: 'bg-secondary',
         iconColor: 'text-secondary-foreground',
@@ -70,9 +70,9 @@ const t = {
       {
         id: 'voice',
         tag: 'Asistente de Voz',
-        title: 'Registra ventas con tu voz',
+        title: 'Conoce el registro de ventas por voz',
         description:
-          'Voz Pymio interpreta el comando y prepara un borrador de venta. Requiere internet y tu propia clave de Gemini; tú confirmas antes de guardar.',
+          'La app de desarrollo usa Gemini para interpretar comandos y preparar borradores de venta. Requiere internet y tu propia clave de Gemini.',
         highlight: 'Español chileno · Requiere internet · Borrador por confirmar',
         iconBg: 'bg-accent/20',
         iconColor: 'text-accent-foreground',
@@ -93,8 +93,8 @@ const t = {
     ],
   },
   en: {
-    title: 'Pymio Tour',
-    subtitle: 'Illustrative tour · Sample figures, not real business data',
+    title: 'Explore Pymio',
+    subtitle: 'Development demo · Illustrative figures',
     close: 'Close',
     prev: 'Previous',
     next: 'Next',
@@ -104,9 +104,9 @@ const t = {
       {
         id: 'sii',
         tag: 'Sample documents',
-        title: 'Create tax documents with no hassle',
+        title: 'Review tax-document drafts',
         description:
-          'Prepare receipt and invoice drafts. Pymio validates the RUT and calculates VAT, but documents are not sent to the SII and have no tax validity.',
+          'The app prepares receipt and invoice drafts, checks RUT format, and calculates VAT. It does not send documents to the SII, and they have no tax validity.',
         highlight: '19% VAT calculated · RUT validated · Not sent to SII',
         iconBg: 'bg-secondary',
         iconColor: 'text-secondary-foreground',
@@ -152,9 +152,9 @@ const t = {
       {
         id: 'voice',
         tag: 'Voice Assistant',
-        title: 'Record sales with your voice',
+        title: 'See how voice sales entry works',
         description:
-          'Voz Pymio interprets a command and prepares a sales draft. It requires internet and your own Gemini key; you confirm before saving.',
+          'The development app uses Gemini to interpret commands and prepare sales drafts. It requires internet and your own Gemini key.',
         highlight: 'Chilean Spanish · Internet required · Draft needs confirmation',
         iconBg: 'bg-accent/20',
         iconColor: 'text-accent-foreground',

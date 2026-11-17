@@ -9,87 +9,87 @@ interface FeaturesSectionProps {
 
 const t = {
   es: {
-    eyebrow: 'Todo lo que necesitas',
-    title:   'Cuatro herramientas. Una sola app.',
-    subtitle:'Menos papeleo y menos confusión. Pymio ordena lo importante de tu negocio.',
+    eyebrow: 'Funciones en desarrollo',
+    title:   'Conoce lo que muestra Pymio.',
+    subtitle:'La demo usa datos de ejemplo. La app sigue en desarrollo y no está lista para gestionar un negocio real.',
     features: [
       {
         icon:    'DocumentTextIcon' as const,
         color:   'primary',
-        tag:     'Documentos tributarios',
+        tag:     'Documentos de ejemplo',
         title:   'Boletas y facturas',
-        benefit: 'Crea boletas, facturas, notas de débito y notas de crédito con varios productos y IVA calculado.',
-        detail:  'Valida el RUT y calcula el 19% de IVA. La demo guarda un borrador que no se transmite al SII ni tiene validez tributaria.',
+        benefit: 'Explora borradores de boletas, facturas, notas de débito y notas de crédito con varios productos.',
+        detail:  'La app valida el formato del RUT y calcula el IVA del 19%. Los borradores no se envían al SII ni tienen validez tributaria.',
         big:     true,
       },
       {
         icon:    'ChartBarIcon' as const,
         color:   'accent',
-        tag:     'Panel claro',
-        title:   'Control de Ventas',
-        benefit: 'Ve cuánto vendiste por día, semana, mes o año, con gráfico y ventas pendientes.',
+        tag:     'Resumen de ejemplo',
+        title:   'Ventas',
+        benefit: 'Explora un resumen por día, semana, mes o año y revisa ventas pendientes de ejemplo.',
         detail:  '',
         big:     false,
       },
       {
         icon:    'ArchiveBoxIcon' as const,
         color:   'accent',
-        tag:     'Alertas de stock',
+        tag:     'Inventario de ejemplo',
         title:   'Inventario',
-        benefit: 'Busca, filtra y edita productos, y mira qué stock está en nivel crítico.',
+        benefit: 'Revisa productos de prueba y ejemplos de alertas de stock.',
         detail:  '',
         big:     false,
       },
       {
         icon:    'MicrophoneIcon' as const,
         color:   'primary',
-        tag:     'Voz + IA',
-        title:   'Asistente de Voz Pymio',
-        benefit: 'Registra ventas hablando: "Registra una venta de $10.000 en efectivo". Tú confirmas antes de guardar.',
-        detail:  'Reconoce español chileno (es-CL) y usa Gemini con tu propia clave de Google AI Studio.',
+        tag:     'Voz con Gemini',
+        title:   'Voz Pymio',
+        benefit: 'La app de desarrollo interpreta comandos de venta y prepara un borrador para que lo revises.',
+        detail:  'Usa Gemini, requiere internet y tu propia clave de Google AI Studio. No admite comandos de gastos.',
         big:     true,
       },
     ],
   },
   en: {
-    eyebrow: 'Everything you need',
-    title:   'Four tools. One app.',
-    subtitle:'Less paperwork, less confusion. Pymio organizes what matters in your business.',
+    eyebrow: 'Features in development',
+    title:   'Explore the Pymio demo.',
+    subtitle:'The demo uses sample data. The app is still in development and is not ready to manage a real business.',
     features: [
       {
         icon:    'DocumentTextIcon' as const,
         color:   'primary',
-        tag:     'Tax documents',
+        tag:     'Sample documents',
         title:   'Receipts and invoices',
-        benefit: 'Create receipts, invoices, debit and credit notes with multiple products and VAT calculated.',
-        detail:  'Validates the RUT and calculates 19% VAT. The demo saves a draft that is not sent to the SII and has no tax validity.',
+        benefit: 'Explore receipt, invoice, debit-note, and credit-note drafts with multiple products.',
+        detail:  'The app checks RUT format and calculates 19% VAT. Drafts are not sent to the SII and have no tax validity.',
         big:     true,
       },
       {
         icon:    'ChartBarIcon' as const,
         color:   'accent',
-        tag:     'Clear dashboard',
-        title:   'Sales Tracking',
-        benefit: 'See what you sold by day, week, month or year, with a chart and pending sales.',
+        tag:     'Sample summary',
+        title:   'Sales',
+        benefit: 'Explore a day, week, month, or year summary and review sample pending sales.',
         detail:  '',
         big:     false,
       },
       {
         icon:    'ArchiveBoxIcon' as const,
         color:   'accent',
-        tag:     'Stock alerts',
+        tag:     'Sample inventory',
         title:   'Inventory',
-        benefit: 'Search, filter and edit products, and see which stock is at a critical level.',
+        benefit: 'Review sample products and example low-stock alerts.',
         detail:  '',
         big:     false,
       },
       {
         icon:    'MicrophoneIcon' as const,
         color:   'primary',
-        tag:     'Voice + AI',
-        title:   'Pymio Voice Assistant',
-        benefit: 'Log sales by speaking: "Register a $10,000 cash sale". You confirm before saving.',
-        detail:  'Understands Chilean Spanish (es-CL) and uses Gemini with your own Google AI Studio key.',
+        tag:     'Voice with Gemini',
+        title:   'Voz Pymio',
+        benefit: 'The development app interprets sales commands and prepares a draft for you to review.',
+        detail:  'It uses Gemini, requires internet and your own Google AI Studio key, and does not support expense commands.',
         big:     true,
       },
     ],
@@ -193,7 +193,7 @@ export default function FeaturesSection({ lang }: FeaturesSectionProps) {
                 <div className="flex items-center gap-2 mb-2">
                   <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
                   <span className="text-xs font-bold text-primary-foreground uppercase tracking-wider">
-                    {lang === 'es' ? 'Borrador · sin envío al SII' : 'Draft · not sent to SII'}
+                    {lang === 'es' ? 'Ejemplo · no enviado al SII' : 'Sample · not sent to SII'}
                   </span>
                 </div>
                 <div className="flex items-end gap-1">
@@ -279,7 +279,7 @@ export default function FeaturesSection({ lang }: FeaturesSectionProps) {
                   </div>
                   <div className="flex-1">
                     <div className="text-white/60 text-[10px] uppercase tracking-wider">
-                      {lang === 'es' ? 'Escuchando...' : 'Listening...'}
+                      {lang === 'es' ? 'Ejemplo de voz' : 'Voice example'}
                     </div>
                   </div>
                   <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />

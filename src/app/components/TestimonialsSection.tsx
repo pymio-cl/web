@@ -9,14 +9,14 @@ interface TestimonialsSectionProps {
 
 const personas = {
   es: [
-    { icon: 'BuildingStorefrontIcon' as const, title: 'Dueño o dueña', desc: 'Registra ventas, mira ingresos y stock crítico, y emite documentos desde un solo panel.' },
-    { icon: 'CalculatorIcon' as const, title: 'Contador o contadora', desc: 'Revisa las ventas y los documentos pendientes del negocio con una vista ordenada.' },
-    { icon: 'MicrophoneIcon' as const, title: 'Feriantes y comercio local', desc: 'Habla en vez de escribir: dicta la venta y confirma con un toque.' },
+    { icon: 'BuildingStorefrontIcon' as const, title: 'Dueños de negocio', desc: 'La demo muestra ventas, inventario y borradores con datos de ejemplo.' },
+    { icon: 'CalculatorIcon' as const, title: 'Contadores', desc: 'Revisa cómo se presentan las ventas y los documentos de prueba.' },
+    { icon: 'MicrophoneIcon' as const, title: 'Comercio local', desc: 'Conoce cómo Voz Pymio prepara borradores de venta a partir de un comando.' },
   ],
   en: [
-    { icon: 'BuildingStorefrontIcon' as const, title: 'Owner', desc: 'Log sales, see income and critical stock, and issue documents from one dashboard.' },
-    { icon: 'CalculatorIcon' as const, title: 'Accountant', desc: 'Review the business sales and pending documents in an organized view.' },
-    { icon: 'MicrophoneIcon' as const, title: 'Market vendors and local shops', desc: 'Speak instead of typing: dictate the sale and confirm with one tap.' },
+    { icon: 'BuildingStorefrontIcon' as const, title: 'Business owners', desc: 'The tour shows sample sales, inventory, and document drafts.' },
+    { icon: 'CalculatorIcon' as const, title: 'Accountants', desc: 'See how sample sales and test documents are presented.' },
+    { icon: 'MicrophoneIcon' as const, title: 'Local businesses', desc: 'See how Voz Pymio prepares a sales draft from a command.' },
   ],
 };
 
@@ -46,15 +46,15 @@ export default function TestimonialsSection({ lang }: TestimonialsSectionProps) 
       <div className="max-w-5xl mx-auto px-5 md:px-8 relative z-10">
         <div className="text-center mb-12">
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent-foreground mb-3">
-            {lang === 'es' ? 'Para quién es' : 'Who it is for'}
+            {lang === 'es' ? 'Perfiles de ejemplo' : 'Sample profiles'}
           </p>
           <h2 className="text-hero-md text-foreground mb-3">
-            {lang === 'es' ? 'Hecho para quienes llevan un negocio.' : 'Built for people who run a business.'}
+            {lang === 'es' ? 'Una demo para distintos roles.' : 'A demo for different roles.'}
           </h2>
           <p className="text-pretty text-sm text-muted-foreground max-w-xl mx-auto">
             {lang === 'es'
-              ? 'La demo incluye dos perfiles de prueba: dueño y contador.'
-              : 'The demo includes two test profiles: owner and accountant.'}
+              ? 'Estos perfiles ilustran usos posibles; no son testimonios de clientes.'
+              : 'These profiles illustrate possible uses; they are not customer testimonials.'}
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
